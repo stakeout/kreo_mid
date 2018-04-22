@@ -1,18 +1,47 @@
 /* Your custom fonts here */
-
-/* Example
+@font-face {
+  font-family: "FFDINRoundPro";
+  src: url("../fonts/FFDINRoundPro-Light.woff2") format("woff2"),
+        url("../fonts/FFDINRoundPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Custom-Font.eot');
-    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value
-    font-style: normal;     // Also could has another value
-    }
+  font-family: "FFDINRoundPro";
+  src: url("../fonts/FFDINRoundPro-Regular.woff2") format("woff2"),
+        url("../fonts/FFDINRoundPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "FFDINRoundPro";
+  src: url("../fonts/FFDINRoundPro-Medium.woff2") format("woff2"),
+        url("../fonts/FFDINRoundPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "FFDINRoundPro";
+  src: url("../fonts/FFDINRoundPro-Bold.woff2") format("woff2"),
+        url("../fonts/FFDINRoundPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FFDINRoundPro";
+  src: url("../fonts/FFDINRoundPro-Black.woff2") format("woff2"),
+        url("../fonts/FFDINRoundPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 // Var for using custom font
-$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
-*/
+$customFont: 'FFDINRoundPro', Helvetica, Arial, sans-serif;
