@@ -1,0 +1,73 @@
+.promo
+  height 100vh
+  background-color #222e3c
+  background-image url(__static__minified-svg/patern50-50.svg)
+  background-repeat repeat
+  background-size 50px 50px
+  &__inner
+    display flex
+    height inherit
+  &__content
+    display flex
+    flex-direction column
+    align-items center
+    width 720px
+    height 720px
+    padding-top 215px
+    padding-bottom 100px
+    margin auto
+    border-radius 50%
+    text-align center
+    overflow hidden
+    background-color #c5c5c5
+    transform scale(0)
+    animation scale 2s linear 2s
+    animation-fill-mode: forwards;
+  &__content-header
+    img
+      margin-bottom 35px
+    p
+      font-size 18px
+      line-height 27px
+      font-weight 300
+      color $nav-text
+      text-transform uppercase
+  &__sign-up
+    position relative
+    display flex
+    width 120px
+    height 120px
+    align-items flex-end
+    justify-content center
+    margin-top auto
+    padding-bottom 20px
+    color $white
+    font-size 12px
+    line-height 18px
+    font-weight 500
+    text-align center
+    text-transform uppercase
+    background-color $orange
+    border-radius 50%
+    transition color .3s, background-color .3s ease
+    &::before
+      position absolute
+      content ''
+      top calc(50% - 30px)
+      width 20px
+      height 20px
+      background-color $white
+      border-radius 50%
+    &:hover,
+    &:focus
+      background-color $white
+      color $light-blue
+      &::before
+        background-color $orange
+@keyframes scale
+  0%
+    transform scale(0)
+    opacity 0
+  100%
+    transform scale(1)
+    opacity 1

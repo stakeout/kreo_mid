@@ -22,6 +22,8 @@ img
 
 a
   text-decoration none
+  // -webkit-text-decoration-skip: ink;
+  //   text-decoration-skip: ink;
 
 ul
   list-style none
@@ -34,3 +36,14 @@ h1,h2,h3,p
 
 .container
   display block
+
+.page__inner
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+  flex-direction column
+
+main
+  flex-grow 1
