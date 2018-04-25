@@ -5,6 +5,7 @@
   background-repeat repeat
   background-size 50px 50px
   &__inner
+    position relative
     display flex
     height inherit
   &__content
@@ -12,18 +13,26 @@
     display flex
     flex-direction column
     align-items center
-    width 40vw
-    height 40vw
-    padding-top 215px
-    padding-bottom 100px
+    width 43%
     margin auto
-    border-radius 50%
+    padding-top 120px
+    padding-bottom 43px
     text-align center
-    background-color #c5c5c5
     transform scale(0)
     animation scale 2s ease-in 2s
     animation-fill-mode: forwards;
+    &::after
+      position absolute
+      content ''
+      top 0
+      display block
+      width 100%
+      padding-bottom 100%
+      background-color #c5c5c5
+      border-radius 50%
+      z-index -1
   &__content-header
+      margin-bottom 110px
     img
       margin-bottom 35px
     p
@@ -64,31 +73,28 @@
       color $light-blue
       &::before
         background-color $orange
-  &__mouse
-    display block
-    content ''
+.mouse-icon
+  position absolute
+  bottom 10px
+  left calc(50% - 15px)
+  width 30px
+  height 50px
+  border-radius: 15px 15px 13px 13px;
+  border: 2px solid #fff;
+  transform scale(0)
+  animation scale-mouse 1s ease-out 3.8s
+  animation-fill-mode: forwards;
+  &:before
     position absolute
-    width 30px
-    height 50px
-    bottom -70px
-    left 50%
-    border-radius: 15px 15px 13px 13px;
-    border: 2px solid #fff;
-    transform translateX(-50%) scaleY(0)
-    animation mouse-scale 1s ease-out 3.8s
-    animation-fill-mode: forwards;
-    &:before
-      position absolute
-      content ''
-      left 50%
-      top 8px
-      margin-left -2px
-      width 4px
-      height 9px
-      background #fff
-      border-radius 2px
-      animation mouse-wheel 1.25s infinite linear
-      transform-origin 50% 0
+    content ''
+    left calc(50% - 2px)
+    top 8px
+    width 4px
+    height 9px
+    background #fff
+    border-radius 2px
+    animation mouse-wheel 1.25s infinite linear
+    transform-origin 50% 0
 
 @keyframes scale
   0%
@@ -98,12 +104,13 @@
     transform scale(1)
     opacity 1
 
-@keyframes mouse-scale
+@keyframes scale-mouse
   0%
-    transform translateX(-50%) scaleY(0)
+    transform scale(0)
+    opacity 0
   100%
-    transform translateX(-50%) scaleY(1)
-
+    transform scale(1)
+    opacity .3
 
 @keyframes mouse-wheel
     0%,
