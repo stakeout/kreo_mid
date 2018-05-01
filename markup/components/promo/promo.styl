@@ -1,122 +1,52 @@
 .promo
-  height 100vh
-  background-color #222e3c
-  background-image url(__static__minified-svg/patern50-50.svg)
-  background-repeat repeat
-  background-size 50px 50px
-  &__inner
+  &__header
     position relative
-    display flex
-    height inherit
-  &__content
-    position relative
-    display flex
-    flex-direction column
-    align-items center
-    width 43%
-    margin auto
-    padding-top 120px
-    padding-bottom 43px
-    text-align center
-    transform scale(0)
-    animation scale 2s ease-in 2s
-    animation-fill-mode: forwards;
+    background-color #638BD3
+    min-height 470px
+    padding-top 95px
     &::after
       position absolute
       content ''
-      top 0
-      display block
-      width 100%
-      padding-bottom 100%
-      background-color #c5c5c5
-      border-radius 50%
-      z-index -1
-  &__content-header
-      margin-bottom 110px
-    img
-      margin-bottom 35px
-    p
-      font-size 18px
-      line-height 27px
-      font-weight 300
-      color $nav-text
-      text-transform uppercase
-  &__sign-up
-    position relative
-    display flex
-    width 120px
-    height 120px
-    align-items flex-end
-    justify-content center
-    margin-top auto
-    padding-bottom 20px
-    color $white
-    font-size 12px
-    line-height 18px
-    font-weight 500
-    text-align center
-    text-transform uppercase
-    background-color $orange
-    border-radius 50%
-    transition color .3s, background-color .3s ease
+      width: 0;
+      height: 0;
+      bottom 0
+      left 0
+      border-style: solid;
+      border-width: 0 978px 70px 700px;
+      border-color: transparent transparent #fff transparent;
     &::before
       position absolute
       content ''
-      top calc(50% - 30px)
-      width 20px
-      height 20px
-      background-color $white
-      border-radius 50%
-    &:hover,
-    &:focus
-      background-color $white
-      color $light-blue
-      &::before
-        background-color $orange
-.mouse-icon
-  position absolute
-  bottom 10px
-  left calc(50% - 15px)
-  width 30px
-  height 50px
-  border-radius: 15px 15px 13px 13px;
-  border: 2px solid #fff;
-  transform scale(0)
-  animation scale-mouse 1s ease-out 3.8s
-  animation-fill-mode: forwards;
-  &:before
-    position absolute
-    content ''
-    left calc(50% - 2px)
-    top 8px
-    width 4px
-    height 9px
-    background #fff
-    border-radius 2px
-    animation mouse-wheel 1.25s infinite linear
-    transform-origin 50% 0
+      width: 0;
+      height: 0;
+      left 0
+      bottom 0
+      border-style: solid;
+      border-width: 65px 0 71px 700px;
+      border-color: transparent transparent transparent #4771bc;
+    h1
+      margin-bottom 35px
+      font-size 56px
+      line-height 72px
+      color #fff
+      font-weight 400
+    p
+      max-width 550px
+      font-size 22px
+      line-height 26px
+      color #fff
+  &__content
+    padding-top 55px
+    padding-bottom 55px
+    h2
+      margin-bottom 20px
+      font-size 32px
+      line-height 1
+      color #1d2029
+    p
+      font-size 16px
+      line-height 22px
+      color #21242e
+      &:not(:last-of-type)
+        margin-bottom 20px
 
-@keyframes scale
-  0%
-    transform scale(0)
-    opacity 0
-  100%
-    transform scale(1)
-    opacity 1
-
-@keyframes scale-mouse
-  0%
-    transform scale(0)
-    opacity 0
-  100%
-    transform scale(1)
-    opacity .3
-
-@keyframes mouse-wheel
-    0%,
-    to
-        transform: scaleY(.4) translateY(0)
-    20%
-        transform: scaleY(1) translateY(0)
-    60%
-        transform: scaleY(.4) translateY(12px)

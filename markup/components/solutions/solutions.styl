@@ -1,0 +1,105 @@
+.solutions
+  background-color: #F5F7FA
+  &__inner
+    display flex
+    flex-wrap wrap
+    padding-top 60px
+    padding-bottom 120px
+  &__title
+    width 100%
+    margin-bottom 55px
+    padding-left 25px
+    font-size 32px
+    line-height 40px
+    color #1D2029
+    font-weight 400
+    text-transform uppercase
+  &__controls
+    border-radius 3px 0 0 3px
+    background: linear-gradient(60deg,#c5ccd6 0%,#e1e7f0 100%)
+    box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
+  &__item
+    flex-basis 350px
+    height 90px
+    padding 0 40px
+    font-size 18px
+    line-height 90px
+    font-weight 500
+    cursor pointer
+    &:hover
+      background-color: rgba(255,255,255,0.5)
+    &.active
+      color #F58240
+      background-color #fff
+    &:first-child
+      border-radius 3px 0 0 0
+    &:last-child
+      border-radius 0 0 0 3px
+  &__tabs
+    flex-grow 1
+    min-height 430px
+    & > div
+      display none
+.tab-content
+  height 100%
+  box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
+  h2
+    position relative
+    display inline-block
+    vertical-align top
+    margin-left 120px
+    padding 3px 15px 3px 3px
+    font-size 22px
+    line-height 28px
+    color #fff
+    font-weight 400
+    background-color rgba(216,216,216,.4)
+    &::before
+      position absolute
+      content ''
+
+  &__header
+    height 130px
+    padding-top 50px
+    background linear-gradient(45deg,rgba(73,73,94,.3) 0%,rgba(97,114,134,.2) 100%)
+  &__text
+    background-color #fff
+  &__text,
+  &__footer
+    display flex
+    align-items center
+    justify-content space-between
+    padding-top 35px
+    padding-left 40px
+    padding-right 40px
+    padding-bottom 35px
+    ul
+      max-width 500px
+      li
+        position relative
+        padding-left 20px
+        color #343948
+        font-size 14px
+        line-height 20px
+        font-weight 400
+        &::before
+          position absolute
+          content ''
+          left 0
+          top calc(50% - 3px)
+          width 6px
+          height 6px
+          background-color: #F58240
+          border-radius 50%
+    a
+      color #5C8AE6
+      font-size 12px
+      line-height 22px
+      font-weight 500
+      text-transform uppercase
+  &__footer
+    background-color: #F5F7FA
+.tab-content:first-child
+  background: url("https://www.kreo.net/hubfs/Kreo_Website/images/website_images/solutions/BIM_Professionals.png") center top no-repeat
+  background-size 100% 130px
+

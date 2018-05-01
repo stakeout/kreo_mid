@@ -1,0 +1,80 @@
+.products
+  background-color: #DDE2EB;
+  &__inner
+    padding-top 60px
+    padding-bottom 130px
+  &__title
+    margin-bottom 55px
+    padding-left 25px
+    font-size 32px
+    line-height 40px
+    color #1D2029
+    font-weight 400
+    text-transform uppercase
+  &__list
+    display flex
+    justify-content space-between
+  &__item
+    flex-basis 360px
+    padding 50px 40px 40px
+    background-color #fff
+    box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
+    &:hover
+      outline blue
+    a
+      display flex
+      flex-direction column
+      align-items center
+      justify-content stretch
+      height 100%
+      text-align center
+    p
+      margin-bottom 25px
+      font-size 16px
+      line-height 22px
+      color #8898B3
+    span
+      position relative
+      display block
+      padding-right 20px
+      color #5C8AE6
+      font-size 12px
+      line-height 22px
+      font-weight 500
+      text-transform uppercase
+      &::after
+        position absolute
+        content '>'
+        right 0
+        top -3px
+        font-size 20px
+        color #5c8ae6
+
+  &__item-title
+    margin-bottom 10px
+    font-size 24px
+    line-height 30px
+    font-weight 500
+    color #1D2029
+  &__icon-wrapper
+    width 100px
+    height 100px
+    margin-bottom 20px
+    border-radius 50%
+    background-color #7572CB
+    opacity .1
+  &__btn
+    margin-top auto
+    width 170px
+    margin-bottom 20px
+    padding 13px 0
+    font-size 14px
+    line-height 18px
+    font-weight 500
+    color #fff
+    background-color: #5C8AE6;
+    border-radius 25px
+    &:hover
+      background-color: #576B88;
+.side-line
+  border-left 2px solid #F58240
