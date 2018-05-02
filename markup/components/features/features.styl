@@ -1,0 +1,91 @@
+.features
+  background-color: #F5F6F7
+  &__inner
+    padding-top 60px
+    padding-bottom 60px
+  &__title
+    margin-bottom 55px
+    padding-left 25px
+    font-size 32px
+    line-height 40px
+    color #1D2029
+    font-weight 400
+    text-transform uppercase
+  &__list
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+    flex-wrap wrap
+  &__item
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+    flex-direction column
+    flex-basis 360px
+    padding 40px
+    background-color: #fff
+    box-shadow 0 10px 30px 0 rgba(51,56,71,0.08)
+    &:not(:nth-child(3n))
+      margin-right 45px
+    &:not(:nth-child(-n+3))
+      margin-top 45px
+  &__item-title
+    margin-bottom 20px
+    color #343948
+    font-size 22px
+    line-height 30px
+    font-weight 400
+  &__video-wrap
+    margin-top auto
+    width 280px
+    height 148px
+    margin-bottom 20px
+    overflow: hidden
+  &__hint
+    position relative
+    span
+      color #5C8AE6
+      font-size 12px
+      line-height 22px
+      font-weight 500
+      text-transform uppercase
+      &:hover
+        & + .hint-wrapper
+          visibility visible
+          opacity 1
+
+.hint-wrapper
+  position absolute
+  opacity 0
+  visibility hidden
+  padding 25px
+  background-color #fff
+  box-shadow 0 10px 30px 0 rgba(51,56,71,0.08)
+  p
+    margin-bottom 20px
+    color #000
+    font-weight 500
+    font-size 16px
+    line-height 20px
+  ul
+    width 300px
+    li
+      position relative
+      padding-left 20px
+      color #343948
+      font-size 14px
+      line-height 20px
+      font-weight 400
+      &::before
+        position absolute
+        content ''
+        left 0
+        top calc(50% - 3px)
+        width 6px
+        height 6px
+        background-color: #F58240
+        border-radius 50%
