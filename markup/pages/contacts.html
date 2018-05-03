@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  {{> head/head head.defaults}}
+</head>
+
+<body class="page">
+  %=symbols=%
+
+  <div class="page__inner">
+    {{> header/header}}
+    <main class="page-content">
+      {{> contacts/contacts}}
+      {{> sign-form/sign-form}}
+    </main>
+
+<!--     <footer class="page-footer">
+      {{> footer/footer}}
+    </footer> -->
+  </div>
+
+
+  <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+
+  <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>
