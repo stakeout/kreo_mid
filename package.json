@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "directories": {},
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "izimodal": "^1.5.1",
+    "izimodal-1.6.0": "^1.6.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

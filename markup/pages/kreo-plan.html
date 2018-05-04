@@ -11,15 +11,14 @@
   <div class="page__inner">
     {{> header/header}}
     <main class="page-content">
-      {{> promo/promo}}
-      {{> products/products}}
-      {{> solutions/solutions}}
+      {{> promo-plan/promo-plan}}
+      {{> features/features features.kreoPlan}}
     </main>
 
 <!--     <footer class="page-footer">
       {{> footer/footer}}
     </footer> -->
-    {{> sign-form/sign-form id.static}}
+    {{> sign-form/sign-form id.kreoPlan}}
   </div>
 
 
@@ -30,5 +29,3 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
 </body>
-
-</html>

@@ -1,5 +1,5 @@
 .features
-  background-color: #F5F6F7
+  background-color #F5F6F7
   &__inner
     padding-top 60px
     padding-bottom 60px
@@ -12,17 +12,9 @@
     font-weight 400
     text-transform uppercase
   &__list
-    display -webkit-flex
-    display -moz-flex
-    display -ms-flex
-    display -o-flex
     display flex
     flex-wrap wrap
   &__item
-    display -webkit-flex
-    display -moz-flex
-    display -ms-flex
-    display -o-flex
     display flex
     flex-direction column
     flex-basis 360px
@@ -48,6 +40,8 @@
   &__hint
     position relative
     span
+      display inline-block
+      vertical-align top
       color #5C8AE6
       font-size 12px
       line-height 22px
@@ -57,7 +51,11 @@
         & + .hint-wrapper
           visibility visible
           opacity 1
-
+      i
+        display inline-block
+        vertical-align top
+        font-size 16px
+        font-style normal
 .hint-wrapper
   position absolute
   opacity 0

@@ -1,5 +1,7 @@
 .products
-  background-color: #DDE2EB;
+  background-color: #DDE2EB
+  &__no-active
+    visibility hidden
   &__inner
     padding-top 60px
     padding-bottom 130px
@@ -70,6 +72,7 @@
       background-image url(__static__general/icon_plan.svg)
       background-repeat no-repeat
   &__btn
+    position relative
     margin-top auto
     width 170px
     margin-bottom 20px
@@ -78,9 +81,17 @@
     line-height 18px
     font-weight 500
     color #fff
-    background-color: #5C8AE6;
+    background-color: #5C8AE6
     border-radius 25px
+    z-index 1
+    &--design
+      color #343948
+      background-color: #E8E9EB
+      &:hover
+        color #fff
+    &--plan
+      background-color: #576B88
     &:hover
-      background-color: #576B88;
+      background-color: #576B88
 .side-line
   border-left 2px solid #F58240
