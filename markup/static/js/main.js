@@ -1,6 +1,6 @@
 'use strict';
 // import magnificPopup from 'magnific-popup';
-import {stickyNav} from '../../components/header/header';
+import {stickyNav, activePageLink} from '../../components/header/header';
 import  * as tabs from '../../components/solutions/solutions';
 // import  * as youtube from '../../components/features/features';
 import  * as faq from '../../components/faq/faq';
@@ -12,6 +12,7 @@ import iziModal from 'iziModal-1.6.0/js/iziModal';
 $(() => {
   $.fn.iziModal = iziModal;
   stickyNav();
+  activePageLink();
   // var modal = new iziModal();
   $(".solutions__inner").tabs();
   var signUp = $('#signUp');

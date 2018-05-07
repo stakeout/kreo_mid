@@ -5,20 +5,16 @@
   {{> head/head head.defaults}}
 </head>
 
-<body class="page">
+<body class="page page--index">
   %=symbols=%
 
   <div class="page__inner">
     {{> header/header}}
     <main class="page-content">
       {{> promo/promo}}
-      <!-- {{> products/products}} -->
+      {{> products/products}}
       {{> solutions/solutions}}
     </main>
-
-<!--     <footer class="page-footer">
-      {{> footer/footer}}
-    </footer> -->
     {{> sign-form/sign-form id.static}}
   </div>
 

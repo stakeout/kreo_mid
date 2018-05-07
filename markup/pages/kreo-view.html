@@ -5,7 +5,7 @@
   {{> head/head head.defaults}}
 </head>
 
-<body class="page">
+<body class="page page--view">
   %=symbols=%
 
   <div class="page__inner">
@@ -16,10 +16,6 @@
       {{> pricing/pricing}}
       {{> faq/faq}}
     </main>
-
-<!--     <footer class="page-footer">
-      {{> footer/footer}}
-    </footer> -->
     {{> sign-form/sign-form id.static}}
   </div>
 
@@ -29,6 +25,5 @@
 
   <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script srec="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
 </body>
