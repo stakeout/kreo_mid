@@ -1,24 +1,29 @@
 <section class="features">
   <div class="features__inner container">
     <h2 class="features__title side-line">features</h2>
-    <ul class="features__list">
+    <ul class="features__list" id="features">
       {{#each this}}
         <li class="features__item">
           <h3 class="features__item-title">{{title}}</h3>
           <div class="features__video-wrap">
-            <!-- <img src="{{url}}" alt="" /> -->
-            {{{url}}}
+            {{#if this.bg}}
+              <a href="{{bg}}">
+                <img src="{{bg}}" width="" height="" alt="" />
+              </a>
+            {{else}}
+              {{{url}}}
+            {{/if}}
           </div>
           {{#if this.hint}}
             <div class="features__hint">
               <span>more info <i>&#9432;</i></span>
               <div class="hint-wrapper">
                 {{#if hint.title}}
-                  <p>{{title}}</p>
+                  <p>{{{hint.title}}}</p>
                 {{/if}}
                 <ul>
                   {{#each hint.list}}
-                    <li>{{item}}</li>
+                    <li>{{{item}}}</li>
                   {{/each}}
                 </ul>
               </div>
