@@ -180,163 +180,34 @@ features: {
     {
       title: 'Export Revit model to Kreo View instantly',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/g7C9-OCVGzk?start=10&end=50&versoin=3" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        title: 'Collaborate with your team members and clients',
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'Collaborate with your team members and clients',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/g7C9-OCVGzk?start=240&end=281&versoin=3"  allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'Demo your BIM models',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/g7C9-OCVGzk?start=289&end=324&versoin=3"  allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'Real time collision detection',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/g7C9-OCVGzk?start=163&end=239&versoin=3"  allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'View all BIM model information attributes',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/LdgUkv00hOs" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'Share your BIM model',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/g7C9-OCVGzk?start=127&end=159&versoin=3"  allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'Use Clip-box option to examine the BIM-model',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/RoBgLTEkde4" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     },
     {
       title: 'Walk through the BIM-model',
       url: '<iframe width="280" height="148" src="https://www.youtube.com/embed/-QKicxBMj5E" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-      hint: {
-        list: [
-          {
-            item: 'row 1',
-          },
-          {
-            item: 'row 2',
-          },
-          {
-            item: 'row 3',
-          },
-          {
-            item: 'row 4',
-          }
-        ]
-      }
     }
   ]
 }
