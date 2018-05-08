@@ -17,25 +17,22 @@
     display flex
     justify-content space-between
   &__item
+    display flex
+    flex-direction column
+    align-items center
+    justify-content stretch
+    min-height 430px
     flex-basis 360px
     padding 50px 40px 40px
     background-color #fff
     box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
-    &:hover
-      outline blue
-    a
-      display flex
-      flex-direction column
-      align-items center
-      justify-content stretch
-      height 100%
-      text-align center
+    text-align center
     p
       margin-bottom 25px
       font-size 16px
       line-height 22px
       color #8898B3
-    span
+    a:not(.products__btn)
       position relative
       display block
       padding-right 20px
@@ -44,6 +41,8 @@
       line-height 22px
       font-weight 500
       text-transform uppercase
+      &:hover
+        text-decoration underline
       &::after
         position absolute
         content '>'
@@ -72,7 +71,6 @@
       background-image url(__static__general/icon_plan.svg)
       background-repeat no-repeat
   &__btn
-    position relative
     margin-top auto
     width 170px
     margin-bottom 20px
@@ -83,7 +81,9 @@
     color #fff
     background-color: #5C8AE6
     border-radius 25px
-    z-index 1
+    cursor: pointer
+    &:hover
+      background-color: #576B88
     &--design
       color #343948
       background-color: #E8E9EB
@@ -91,7 +91,7 @@
         color #fff
     &--plan
       background-color: #576B88
-    &:hover
-      background-color: #576B88
+      &:hover
+        background-color #5c8ae6
 .side-line
   border-left 2px solid #F58240
