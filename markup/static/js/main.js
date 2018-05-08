@@ -1,12 +1,11 @@
 'use strict';
 import $ from 'jquery';
-import magnificPopup from 'magnific-popup';
+import lity from 'lity';
 import {stickyNav, activePageLink} from '../../components/header/header';
 import  * as tabs from '../../components/solutions/solutions';
 // import  * as youtube from '../../components/features/features';
 import  * as faq from '../../components/faq/faq';
 import iziModal from 'iziModal-1.6.0/js/iziModal';
-// import * as magnificPopup from '../../components/features/magnific';
 /*
     This file can be used as entry point for webpack!
  */
@@ -24,8 +23,5 @@ $(() => {
       closeButton: true
     });
   }
-  $('.features__list').magnificPopup({
-    delegate: 'a',
-    type: 'image'
-  })
+  $('features__video-wrap').on('click', '[data-lity]', lity);
 })

@@ -11,7 +11,9 @@
                 <img src="{{bg}}" width="" height="" alt="" />
               </a>
             {{else}}
-              {{{url}}}
+              <a class="youtube-video" href="https://www.youtube.com/watch?v={{url}}" data-lity>Video
+                <img src="https://img.youtube.com/vi/{{srcId}}/maxres{{imgVer}}.jpg" width="280" height="148" alt="" />
+              </a>
             {{/if}}
           </div>
           {{#if this.hint}}
