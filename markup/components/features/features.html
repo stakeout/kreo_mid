@@ -7,12 +7,12 @@
           <h3 class="features__item-title">{{title}}</h3>
           <div class="features__video-wrap">
             {{#if this.bg}}
-              <a href="{{bg}}">
-                <img src="{{bg}}" width="" height="" alt="" />
+              <a href="{{bg}}" data-lity>
+                <img src="{{bg}}" width="280" height="148" alt="{{title}}" />
               </a>
             {{else}}
               <a class="youtube-video" href="https://www.youtube.com/watch?v={{url}}" data-lity>Video
-                <img src="https://img.youtube.com/vi/{{srcId}}/maxres{{imgVer}}.jpg" width="280" height="148" alt="" />
+                <img src="https://img.youtube.com/vi/{{srcId}}/maxres{{imgVer}}.jpg" width="280" height="148" alt="{{title}}" />
               </a>
             {{/if}}
           </div>
