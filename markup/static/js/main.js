@@ -1,5 +1,6 @@
 'use strict';
-// import magnificPopup from 'magnific-popup';
+import $ from 'jquery';
+import magnificPopup from 'magnific-popup';
 import {stickyNav, activePageLink} from '../../components/header/header';
 import  * as tabs from '../../components/solutions/solutions';
 // import  * as youtube from '../../components/features/features';
@@ -23,4 +24,8 @@ $(() => {
       closeButton: true
     });
   }
+  $('.features__list').magnificPopup({
+    delegate: 'a',
+    type: 'image'
+  })
 })
