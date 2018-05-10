@@ -1,0 +1,96 @@
+.sign-beta
+  display none
+  &__inner
+    position: relative;
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+  &__form-wrap
+    position: relative;
+    width: 650px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #fff;
+  &__description
+    display: flex;
+    align-items: center;
+    width: 350px;
+    background: #2b598f;
+  &__title
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 400;
+    color: #21242E;
+  &__text
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #748091;
+    text-align: center;
+    text-transform: uppercase;
+  &__form
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input
+      width: 49%;
+      margin-bottom: 35px;
+      padding: 20px 30px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #21242E;
+      outline: 0;
+      border: 0;
+      border-bottom: 2px solid #E8E9EB;
+    input:last-of-type
+      width: 100%;
+  &__btn
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 15px 58px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    outline: 0;
+    border: 0;
+    border-radius: 23px;
+    color: #fff;
+    background: #F58240;
+  &__item
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    i
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      &::before
+        position: relative;
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background: #fff;
+      &::after
+        position: absolute;
+        display: block;
+        content: "";
+        width: 17px;
+        height: 10px;
+        top: 9px;
+        left: 7px;
+        border: 5px solid #2b598f;
+        border-top: transparent;
+        border-right: transparent;
+        transform: rotate(-45deg);

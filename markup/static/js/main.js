@@ -23,5 +23,10 @@ $(() => {
       closeButton: true
     });
   }
+  $('#signUpBeta').iziModal({
+    width: 1000,
+    closeOnEscape: true,
+    closeButton: true
+  })
   $('features__video-wrap').on('click', '[data-lity]', lity);
 })
