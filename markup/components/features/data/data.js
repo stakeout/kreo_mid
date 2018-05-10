@@ -193,48 +193,56 @@ features: {
       title: 'Export Revit model to Kreo View instantly',
       url: 'g7C9-OCVGzk&start=10&end=50',
       srcId: 'g7C9-OCVGzk',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/1.png',
       imgVer: '1'
     },
     {
       title: 'Collaborate with your team members and clients',
       url: 'g7C9-OCVGzk&start=240&end=281',
       srcId: 'g7C9-OCVGzk',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/2.png',
       imgVer: '2'
     },
     {
       title: 'Demo your BIM models',
       url: 'g7C9-OCVGzk&start=289&end=324',
       srcId: 'g7C9-OCVGzk',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/3.png',
       imgVer: '1'
     },
     {
       title: 'Real time collision detection',
       url: 'g7C9-OCVGzk&start=163&end=239',
       srcId: 'g7C9-OCVGzk',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/4.png',
       imgVer: '2'
     },
     {
       title: 'View all BIM model information attributes',
       url: 'LdgUkv00hOs',
       srcId: 'LdgUkv00hOs',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/5.png',
       imgVer: '2'
     },
     {
       title: 'Share your BIM model',
       url: 'g7C9-OCVGzk&start=127&end=159',
       srcId: 'g7C9-OCVGzk',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/6.png',
       imgVer: '2'
     },
     {
       title: 'Use Clip-box option to examine the BIM-model',
       url: 'RoBgLTEkde4',
       srcId: 'RoBgLTEkde4',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/7.png',
       imgVer: '1'
     },
     {
       title: 'Walk through the BIM-model',
       url: '-QKicxBMj5E',
       srcId: '-QKicxBMj5E',
+      custom: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/plan-video-bg/8.png',
       imgVer: '1'
     }
   ]
