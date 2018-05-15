@@ -6,9 +6,10 @@
 
     "browserSync": {
         "startPath": "/index.html",
-        "server": {
-            "baseDir": "./dev"
-        },
+        "proxy": "kreo.dev",
+        // "server": {
+        //     "baseDir": "./dev"
+        // },
         "port": 3004,
         "open": true,
         "notify": true,
