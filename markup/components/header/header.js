@@ -22,4 +22,8 @@ export const activePageLink = () => {
     navItems[0].classList.add('navigation__item--active');
   }
 
+  if (body.classList.contains('page--contacts')) {
+    navItems[3].classList.add('navigation__item--active');
+  }
+
 }
