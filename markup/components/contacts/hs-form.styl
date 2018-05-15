@@ -1,0 +1,124 @@
+.hs-form fieldset.form-columns-1,
+.hs-form fieldset.form-columns-2 {
+  max-width 550px
+  margin-bottom 20px
+}
+/* Form Field (selector for form field wrapper) */
+
+
+/* Labels (selects field labels and error messages) */
+.hs-form label {}
+.hs-form .hs-form-field > label {
+  display none
+}
+
+/* Inputs (selectors for all inputs)  */
+.hs-form input[type="text"],
+.hs-form input[type="email"],
+.hs-form input[type="tel"],
+.hs-form textarea {
+    font-family inherit
+    font-size: 16px
+    width 250px
+    background-color: rgba(255,255,255,0.3)
+    border: 0;
+    border-bottom: 2px solid #ccd2dd
+    padding: 16px 15px
+
+    margin: 0
+    outline: 0
+    resize: none;
+    background-color #fff
+    transition: background-color .4s,border-bottom-color .4s
+}
+
+.hs-form input[type="text"]:hover,
+.hs-form input[type="email"]:hover,
+.hs-form input[type="tel"]:hover,
+.hs-form textarea:hover {
+  border-bottom-color #f58240
+}
+
+/* Inputs in focus (selectors for all inputs when clicked)  */
+.hs-form input[type="text"]:focus,
+.hs-form input[type="email"]:focus,
+.hs-form input[type="tel"]:focus,
+.hs-form textarea:focus {
+  border-bottom-color #f58240
+}
+
+.hs-form input[type=submit]
+  font-family: inherit
+  display: block
+  min-width: 220px
+  margin 0 auto
+  padding: 15px 40px
+  font-size: 16px
+  border-radius: 60px
+  text-align: center
+  color: #fff
+  transition: background-color .4s,border-color .4s,color .4s
+  line-height: 1
+  text-decoration: none
+  letter-spacing: .2px
+  -webkit-appearance: none
+  outline: 0
+  font-weight: 500
+  background-color #f58240
+  border none
+  &:hover,
+  &:focus
+    background-color #f6a979
+
+// .hs_form,
+// .hs_firstname
+//   margin-right 10px
+/* Multi-line inputs (selectors to target multi-line fields */
+.hs-form textarea {
+  width 98%!important
+}
+.hs-form textarea:focus {}
+
+/* Dropdowns (selectors for dropdowns) */
+.hs-form select {}
+.hs-form select:focus {}
+
+/* Multi-select (selectors for multi-select fields) */
+
+
+/* Required (selectors for fields, when they do not pass validation) */
+.hs-form input:focus:required:invalid,
+.hs-form textarea:focus:required:invalid,
+.hs-form select:focus:required:invalid {}
+
+.hs-form input:focus:required:invalid:focus,
+.hs-form textarea:focus:required:invalid:focus,
+.hs-form select:focus:required:invalid:focus {}
+
+/* Error message (selector for validation messages) */
+.hs-form .hs-error-msgs label
+  color red
+
+
+/* Placeholder Text (styles the placeholder attribute text) */
+::-webkit-input-placeholder { /* Webkit Browsers */}
+:-moz-placeholder { /* Firefox 18- */}
+::-moz-placeholder { /* Firefox 19+ */}
+:-ms-input-placeholder { /* IE10 */}
+
+
+
+/* Submit buttons (selectors for all non-CTA buttons)
+   ========================================================================== */
+
+body .hs-button.primary,
+body input[type="submit"],
+body input[type="button"] {}
+
+body .hs-button.primary:hover,
+body input[type="submit"]:hover,
+body input[type="button"]:hover {}
+
+body .hs-button.primary:focus,
+body input[type="submit"]:focus,
+body input[type="button"]:focus {}
