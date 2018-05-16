@@ -14,5 +14,4 @@ $(() => {
   stickyNav();
   activePageLink();
   $(".solutions__inner").tabs();
-  $('.features__video-wrap').on('click', '[data-lity]', lity);
 })
