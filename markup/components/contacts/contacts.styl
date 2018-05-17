@@ -13,7 +13,7 @@
     justify-content space-between
 .info,
 .form
-  flex-basis 50%
+  flex-basis 47%
   padding 60px 30px
 div.info
   position relative
@@ -22,13 +22,13 @@ div.info
   &::before
     position absolute
     content ''
-    right 0
+    right -74px
     top 0
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 30px 542px 0;
-    border-color: transparent #f5f7fa transparent transparent;
+    bottom 0
+    height 100%
+    width 75px
+    background-image url(__static__general/line.svg)
+    background-repeat no-repeat
   h2
     color #fff
     text-align center
@@ -44,6 +44,7 @@ div.info
       text-decoration underline
 
 .form
+  padding-left 0
   h2
     text-align center
     font-weight 400
