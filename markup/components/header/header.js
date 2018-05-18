@@ -27,3 +27,15 @@ export const activePageLink = () => {
   }
 
 }
+export const mobileNav = () => {
+    const navBtn = document.querySelector('#nav-toggle');
+    const navigation = document.querySelector('.navigation');
+    navBtn.addEventListener('click', function () {
+        this.classList.toggle('open');
+        if (this.classList.contains('open')) {
+            navigation.classList.add('open');
+        } else {
+            navigation.classList.remove('open');
+        }
+    });
+};
