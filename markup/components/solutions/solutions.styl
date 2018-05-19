@@ -18,6 +18,9 @@
     border-radius 3px 0 0 3px
     background: linear-gradient(60deg,#c5ccd6 0%,#e1e7f0 100%)
     box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
+    lg-block(@block{
+      display flex
+    })
   &__item
     flex-basis 350px
     height 90px
@@ -26,6 +29,10 @@
     line-height 90px
     font-weight 400
     cursor pointer
+    lg-block(@block{
+      height 80px
+      line-height 80px
+    })
     &:hover
       background-color: rgba(255,255,255,0.5)
     &.active

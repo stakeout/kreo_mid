@@ -22,40 +22,10 @@ $offset_xs_one_side = ($offset_xs / 2)
 $offset_xxs_one_side = ($offset_xxs / 2)
 
 $fields = 15px
-$fields_lg = 15px
-$fields_md = 15px
-$fields_sm = 15px
-$fields_xs = 15px
-$fields_xxs = 15px
 
 wrapper-full()
     padding-left $fields
     padding-right $fields
-
-    lg-block(@block{
-        padding-left $fields_lg
-        padding-right $fields_lg
-    })
-
-    md-block(@block{
-        padding-left $fields_md
-        padding-right $fields_md
-    })
-
-    sm-block(@block{
-        padding-left $fields_sm
-        padding-right $fields_sm
-    })
-
-    xs-block(@block{
-        padding-left $fields_xs
-        padding-right $fields_xs
-    })
-
-    xxs-block(@block{
-        padding-left $fields_xxs
-        padding-right $fields_xxs
-    })
 
 row-offsets()
     margin-left ($offset_one_side * -1)

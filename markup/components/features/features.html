@@ -12,9 +12,11 @@
               </a>
             {{else}}
               <a class="youtube-video" href="https://www.youtube.com/watch?v={{url}}" data-lity>
-                {{#if custom}}
-                  <img src="{{custom}}" width="280" height="148" alt="{{title}}" />
-                 {{/if}}
+              {{#if custom}}
+                <img src="{{custom}}" width="280" height="148" alt="{{title}}" />
+              {{else}}
+                <img src="https://img.youtube.com/vi/{{srcId}}/maxres{{imgVer}}.jpg" width="280" height="148" alt="{{title}}" />
+              {{/if}}
               </a>
             {{/if}}
           </div>

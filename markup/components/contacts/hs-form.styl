@@ -1,8 +1,11 @@
 .hs-form fieldset.form-columns-1,
-.hs-form fieldset.form-columns-2 {
+.hs-form fieldset.form-columns-2
   max-width 550px
   margin-bottom 20px
-}
+  lg-block(@block{
+    max-width 750px
+    margin 0 auto 20px
+  })
 /* Form Field (selector for form field wrapper) */
 
 
@@ -20,21 +23,23 @@
 .hs-form input[type="text"],
 .hs-form input[type="email"],
 .hs-form input[type="tel"],
-.hs-form textarea {
-    font-family inherit
-    font-size: 16px
-    width 250px
-    background-color: rgba(255,255,255,0.3)
-    border: 0;
-    border-bottom: 2px solid #ccd2dd
-    padding: 16px 15px
+.hs-form textarea
+  font-family inherit
+  font-size: 16px
+  width 250px
+  background-color: rgba(255,255,255,0.3)
+  border: 0;
+  border-bottom: 2px solid #ccd2dd
+  padding: 16px 15px
 
-    margin: 0
-    outline: 0
-    resize: none;
-    background-color #fff
-    transition: background-color .4s,border-bottom-color .4s
-}
+  margin: 0
+  outline: 0
+  resize: none;
+  background-color #fff
+  transition: background-color .4s,border-bottom-color .4s
+  lg-block(@block{
+    width 358px
+  })
 
 .hs-form input[type="text"]:hover,
 .hs-form input[type="email"]:hover,
@@ -79,7 +84,7 @@
 //   margin-right 10px
 /* Multi-line inputs (selectors to target multi-line fields */
 .hs-form textarea {
-  width 98%!important
+  width 99%!important
 }
 .hs-form textarea:focus {}
 

@@ -1,9 +1,9 @@
 .contacts
   position relative
-  transform translateY(-250px)
+  transform translateY(-150px)
   // top -250px
-  background-color #f5f7fa
-  box-shadow 0 0 30px rgba(0,0,0,.2)
+  max-width 1170px
+  margin 0 auto
   &__inner
     display -webkit-flex
     display -moz-flex
@@ -11,30 +11,28 @@
     display -o-flex
     display flex
     justify-content space-between
+    background-color #f5f7fa
+    box-shadow 0 0 30px rgba(0,0,0,.2)
+    lg-block(@block{
+      max-width 870px
+      margin 0 auto
+      flex-direction column
+    })
 .info,
 .form
-  flex-basis 47%
+  flex-basis 50%
   padding 60px 30px
 div.info
   position relative
-  padding-right 80px
   background linear-gradient(0,#37474f 0%,#24293b 100%)
-  &::before
-    position absolute
-    content ''
-    right -74px
-    top 0
-    bottom 0
-    height 100%
-    width 75px
-    background-image url(https://www.kreo.net/hubfs/kreo_new/static/img/svg/line.svg)
-    background-repeat no-repeat
   h2
+    margin-bottom 30px
     color #fff
     text-align center
     font-weight 400
   p
     color #fff
+    margin-bottom 15px!important
   a
     display block
     margin-bottom 20px
@@ -44,8 +42,8 @@ div.info
       text-decoration underline
 
 .form
-  padding-left 0
   h2
+    margin-bottom 30px
     text-align center
     font-weight 400
   p

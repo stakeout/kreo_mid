@@ -9,6 +9,10 @@
     display flex
     padding-top 50px
     padding-bottom 50px
+    lg-block(@block{
+      padding-top 30px
+      padding-bottom 30px
+    })
   &__privacy
     width 200px
     a
@@ -19,8 +23,15 @@
       color #fff
       text-transform uppercase
       transition color .4s
+      lg-block(@block{
+        padding 9px 0
+      })
       &:hover
         color #f58240
+  &__navigation
+    lg-block(@block{
+      flex-basis 200px
+    })
   &__nav-item
     a
       display block
@@ -30,6 +41,9 @@
       color #fff
       text-transform uppercase
       transition color .4s
+      lg-block(@block{
+        padding 9px 0
+      })
       &:hover
         color #f58240
   &__bottom-row
@@ -40,6 +54,9 @@
 .subscription
   color #fff
   margin-right auto
+  lg-block(@block{
+    width 520px
+  })
   h2
     font-size 32px
     font-family inherit
@@ -50,7 +67,10 @@
     margin-bottom 80px
     color #fff
     font-size 16px
-  .hs-form input[type="email"] {
+    lg-block(@block{
+      margin-bottom 40px
+    })
+  .hs-form input[type="email"]
     width 300px
     height 45px
     margin-right 20px
@@ -60,7 +80,9 @@
     border-radius 60px
     background-color transparent
     border 1px solid #fff
-  }
+    lg-block(@block{
+      width 270px
+    })
   .hs-form {
     display flex
     justify-content space-between
