@@ -28,6 +28,9 @@
     &--plan
       padding-top 30px
       padding-bottom 30px
+      xs-block(@block{
+        padding-top 90px
+      })
       h1
         margin-bottom 30px
         font-size 40px
@@ -36,6 +39,9 @@
       p:not(.controls__title)
         font-size 20px
         line-height 30px
+        xs-block(@block{
+          margin-bottom 30px
+        })
       .container
         position relative
         min-height 100%
@@ -71,6 +77,12 @@
   width 600px
   height 338px
   background-color #fff
+  xs-block(@block{
+    position relative
+    top 0
+    width 100%
+    height auto
+  })
   a
     position relative
     display block
@@ -97,6 +109,7 @@
   display -ms-flex
   display -o-flex
   display flex
+  flex-wrap wrap
   align-items center
   margin-bottom 50px
   &__title
@@ -106,6 +119,9 @@
     line-height 1
     font-weight 400
     text-transform uppercase
+    xs-block(@block{
+      margin-right auto
+    })
     span
       font-weight 400
   &__nav-link
@@ -147,6 +163,11 @@
   background-repeat no-repeat
   background-size 15px 15px
   background-position 15px center
+  xs-block(@block{
+    margin-left 0
+    order 1
+    margin-top 30px
+  })
 .sign-up
   width 160px
   padding-top 13px
@@ -164,3 +185,4 @@
     background-color #FA8846;
   &--kreo-plan
     margin-left auto
+

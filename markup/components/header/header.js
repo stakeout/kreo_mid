@@ -1,12 +1,12 @@
 export const stickyNav = () => {
     const $header = $('.page-header');
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 75) {
-            $($header).addClass('stick');
-        } else {
-            $($header).removeClass('stick');
-        }
-    });
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 75) {
+              $($header).addClass('stick');
+          } else {
+              $($header).removeClass('stick');
+          }
+      });
 };
 export const activePageLink = () => {
   const body = document.querySelector('.page');

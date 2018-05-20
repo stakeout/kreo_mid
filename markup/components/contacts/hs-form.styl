@@ -9,6 +9,10 @@
   md-block(@block{
     max-width 650px
   })
+  xs-block(@block{
+    width 100%
+    margin 0
+  })
 /* Form Field (selector for form field wrapper) */
 
 
@@ -45,6 +49,9 @@
   })
   md-block(@block{
     width 305px
+  })
+  xs-block(@block{
+    width 100%!important
   })
 .hs-form input[type="text"]:hover,
 .hs-form input[type="email"]:hover,
@@ -83,14 +90,16 @@
   &:hover,
   &:focus
     background-color #f6a979
-
 // .hs_form,
 // .hs_firstname
 //   margin-right 10px
 /* Multi-line inputs (selectors to target multi-line fields */
-.hs-form textarea {
+.hs-form textarea
   width 99%!important
-}
+  xs-block(@block{
+    width 100%!important
+    margin-bottom 20px
+  })
 .hs-form textarea:focus {}
 
 /* Dropdowns (selectors for dropdowns) */
