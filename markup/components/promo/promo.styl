@@ -6,13 +6,19 @@
     background url("https://www.kreo.net/hubfs/kreo_new/static/img/content/layout.png") no-repeat
     background-size cover
     background-position center
-
     h1
       margin-bottom 35px
       font-size 52px
       line-height 1.5
       color #fff
       font-weight 400
+      xs-block(@block{
+        font-size 59px
+        line-height 1.2
+      })
+      xxs-block(@block{
+        font-size 38px
+      })
     p:not(.controls__title)
       max-width 550px
       font-size 20px
@@ -36,18 +42,28 @@
   &__content
     padding-top 80px
     padding-bottom 120px
+    xs-block(@block{
+      padding-top 60px
+      padding-bottom 60px
+    })
     h2
       margin-bottom 50px
       font-size 36px
       line-height 1
       font-weight 400
       color #37474f
+      xs-block(@block{
+        margin-bottom 30px
+      })
     p
       font-size 16px
       line-height 32px
       color #455a64
       &:not(:last-of-type)
         margin-bottom 40px
+        xs-block(@block{
+          margin-bottom 20px
+        })
 .video-box
   position absolute
   right 0
