@@ -97,6 +97,10 @@
       justify-content center
       width 100%
     })
+    &.dropdown
+      xs-block(@block{
+        flex-wrap: wrap;
+      })
     &--active > a::after
       width 100%
     &:not(:last-child)
@@ -146,6 +150,13 @@
   border-radius 5px
   box-shadow: 0 2px 10px 0 rgba(52,57,72,0.14);
   z-index 100
+  xs-block(@block{
+    position relative
+    width 100%
+    box-shadow none
+    border-radius 0
+    z-index 0
+  })
   &__item:first-child
     border-radius 5px 5px 0 0
   &__item:last-child
