@@ -15,6 +15,9 @@
     })
   &__privacy
     width 200px
+    xs-block(@block{
+      display none
+    })
     a
       display block
       padding 10px 0
@@ -31,6 +34,9 @@
   &__navigation
     lg-block(@block{
       flex-basis 200px
+    })
+    xs-block(@block{
+      display none
     })
   &__nav-item
     a
@@ -57,18 +63,28 @@
   lg-block(@block{
     width 520px
   })
+  xs-block(@block{
+    width auto
+  })
   h2
     font-size 32px
     font-family inherit
     color #fff
     font-weight 400
     margin-bottom 20px
+    xs-block(@block{
+      text-align center
+    })
   p
     margin-bottom 80px
     color #fff
     font-size 16px
     lg-block(@block{
       margin-bottom 40px
+    })
+    xs-block(@block{
+      margin-bottom 30px
+      text-align center
     })
   .hs-form input[type="email"]
     width 300px
@@ -83,20 +99,30 @@
     lg-block(@block{
       width 270px
     })
+    xs-block(@block{
+      margin-right 0
+      width 100%
+    })
   .hs-form {
     display flex
+    flex-wrap wrap
     justify-content space-between
     max-width 550px
     .hs_error_rollup {
       display none
     }
   }
-  .hs-form .hs_email {
+  .hs-form .hs_email
     width 300px
-  }
-  .hs-form .hs_submit {
+    xs-block(@block{
+      width 100%
+      margin-bottom 20px
+    })
+  .hs-form .hs_submit
     width 220px
-  }
+    xs-block(@block{
+      margin 0 auto
+    })
   ::-webkit-input-placeholder { color: #f5f5f5; }
   ::-moz-placeholder          { color: #f5f5f5; } /* Firefox 19+ */
   :-moz-placeholder           { color: #f5f5f5; } /* Firefox 18- */
