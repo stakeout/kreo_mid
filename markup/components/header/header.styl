@@ -7,6 +7,7 @@
     box-shadow: 3px 0 6px rgba(0, 0, 0, 0.19)
     z-index 100
   &__inner
+    position relative
     display flex
     align-items center
     height 80px
@@ -18,6 +19,11 @@
     font-size 0
     background-color transparent
     border none
+    xs-block(@block{
+      display block
+      position absolute
+      right 15px
+    })
     span
       position relative
       display block
@@ -58,23 +64,54 @@
   margin-right 55px
 .navigation
   height inherit
+  &.open
+    opacity 1
+    transform scale(1)
+  xs-block(@block{
+    position absolute
+    top 100%
+    bottom 0
+    left 0
+    width 100%
+    height 50vh
+    opacity 0
+    transform scale(0)
+    background-color#fff
+    z-index 101
+    outline 1px solid green
+  })
   &__list
     display flex
     align-items center
     height inherit
+    xs-block(@block{
+      display block
+      height auto
+    })
   &__item
     position relative
     display flex
     align-items center
     height inherit
+    xs-block(@block{
+      display flex
+      justify-content center
+      width 100%
+    })
     &--active > a::after
       width 100%
     &:not(:last-child)
       margin-right 40px
+      xs-block(@block{
+        margin-right 0
+      })
     &.dropdown:hover > .sub-nav
       display block
     &:hover:not(.dropdown) > a::after
       width 100%
+      xs-block(@block{
+        width 0
+      })
   &__link
     position relative
     font-size 16px
@@ -84,6 +121,10 @@
     color #37474f
     text-transform uppercase
     outline none
+    xs-block(@block{
+      display block
+      padding 20px 30px
+    })
     &::after
       position absolute
       content ''
@@ -93,6 +134,9 @@
       bottom -10px
       background-color: #F58240;
       transition width .3s ease
+      xs-block(@block{
+        bottom 3px
+      })
 .sub-nav
   display none
   position absolute

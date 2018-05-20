@@ -1,7 +1,7 @@
 'use strict';
 import $ from 'jquery';
 import lity from 'lity';
-import {stickyNav, activePageLink} from '../../components/header/header';
+import {stickyNav, activePageLink, mobileNav} from '../../components/header/header';
 import  * as tabs from '../../components/solutions/solutions';
 // import  * as youtube from '../../components/features/features';
 import  * as faq from '../../components/faq/faq';
@@ -12,6 +12,7 @@ import  * as faq from '../../components/faq/faq';
 $(() => {
   // subscribe();
   stickyNav();
+  mobileNav();
   activePageLink();
   $(".solutions__inner").tabs();
 })

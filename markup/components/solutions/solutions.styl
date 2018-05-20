@@ -14,12 +14,19 @@
     color #37474f
     font-weight 400
     text-transform uppercase
+    xs-block(@block{
+      margin-bottom 60px
+    })
   &__controls
     border-radius 3px 0 0 3px
     background: linear-gradient(60deg,#c5ccd6 0%,#e1e7f0 100%)
     box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
     lg-block(@block{
       display flex
+    })
+    xs-block(@block{
+      display block
+      flex-grow 1
     })
   &__item
     flex-basis 350px
@@ -32,6 +39,11 @@
     lg-block(@block{
       height 80px
       line-height 80px
+    })
+    xs-block(@block{
+      height auto
+      padding 20px
+      line-height 1
     })
     &:hover
       background-color: rgba(255,255,255,0.5)
@@ -50,25 +62,24 @@
 .tab-content
   height 100%
   box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
-  h2
-    position relative
-    display inline-block
-    vertical-align top
-    margin-left 120px
-    padding 3px 15px 3px 3px
-    font-size 22px
-    line-height 28px
-    color #fff
-    font-weight 400
-    background-color rgba(216,216,216,.4)
-    &::before
-      position absolute
-      content ''
-
   &__header
     height 130px
     padding-top 50px
     background linear-gradient(45deg,rgba(73,73,94,.3) 0%,rgba(97,114,134,.2) 100%)
+    h2
+      position relative
+      display inline-block
+      vertical-align top
+      margin-left 120px
+      padding 3px 15px 3px 3px
+      font-size 22px
+      line-height 28px
+      color #fff
+      font-weight 400
+      background-color rgba(216,216,216,.4)
+      xs-block(@block{
+        margin-left 40px
+      })
   &__text
     background-color #fff
   &__text,
@@ -80,6 +91,9 @@
     padding-left 40px
     padding-right 40px
     padding-bottom 35px
+    xs-block(@block{
+      padding 20px
+    })
     ul
       max-width 500px
       li
@@ -89,6 +103,9 @@
         font-size 16px
         line-height 2
         font-weight 400
+        xs-block(@block{
+          line-height 1.5
+        })
         &::before
           position absolute
           content ''
@@ -108,6 +125,9 @@
       line-height 24px
       font-weight 600
       text-transform uppercase
+      xs-block(@block{
+        display none
+      })
   &__footer
     background-color: #F5F7FA
 .tab-content:first-child
