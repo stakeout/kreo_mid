@@ -47,8 +47,4 @@ export const navDropdown = () => {
       // Close one dropdown when selecting another
        e.stopPropagation();
     });
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.sub-nav').hide();
-    });
 }

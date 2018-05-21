@@ -36,11 +36,18 @@
         font-size 40px
         line-height 40px
         font-weight 400
+        xxs-block(@block{
+          font-size 28px
+        })
       p:not(.controls__title)
         font-size 20px
         line-height 30px
         xs-block(@block{
           margin-bottom 30px
+        })
+        xxs-block(@block{
+          font-size 16px
+          line-height 1.5
         })
       .container
         position relative
@@ -83,9 +90,22 @@
     width 100%
     height auto
   })
+  xxs-block(@block{
+    background-color transparent
+  })
   a
     position relative
     display block
+    text-align center
+    xxs-block(@block{
+      height 120px
+    })
+    &::before
+      position absolute
+      content 'play video'
+      font-size 16px
+      line-height 1
+      color #fff
     &::after
       position absolute
       content ''
@@ -103,6 +123,11 @@
       cursor pointer
     &:hover::after
       background-color rgba(255,255,255,1)
+
+  img
+    xxs-block(@block{
+      display none
+    })
 .controls
   display -webkit-flex
   display -moz-flex
@@ -121,6 +146,10 @@
     text-transform uppercase
     xs-block(@block{
       margin-right auto
+    })
+    xxs-block(@block{
+      font-size 36px
+      margin-bottom 50px
     })
     span
       font-weight 400
@@ -168,6 +197,10 @@
     order 1
     margin-top 30px
   })
+  xxs-block(@block{
+    margin-left auto
+    margin-right auto
+  })
 .sign-up
   width 160px
   padding-top 13px
@@ -181,6 +214,9 @@
   text-align center
   box-shadow: 0 10px 20px 0 rgba(0,32,77,0.18)
   cursor pointer
+  xxs-block(@block{
+    width 280px
+  })
   &:hover
     background-color #FA8846;
   &--kreo-plan
