@@ -15,55 +15,101 @@
     padding-bottom: 60px
   &__inner-wrap
     row-flex()
+    justify-content center
   &__card
     col()
-    size(6)
+    size(4)
     size-xs(12)
     display flex
     flex-direction: column;
     align-items: center;
-    height: 475px;
-    padding: 55px 75px;
+    padding-top 40px
+    padding-bottom 60px
     background-color: #fff
     text-align center
+    border-radius 10px
+    box-shadow 0 3px 12px rgba(0,0,0,.15)
     &:not(:last-child)
+      color #404F6B
+      margin-right 45px
       xs-block(@block{
+        margin-right 0
         margin-bottom 20px
       })
+    &--plus
+      color #fff
+      background-color #FF7043
   &__card-title
-    font-size: 22px;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 37px;
-    color: #253147;
-    text-transform: uppercase;
+    font-size: 22px
+    line-height: 28px
+    font-weight 400
+    text-align: center
+    margin-bottom: 37px
+    color: #5C8AE6
+    &--plus
+      color #fff
   &__list
-    margin-bottom: 35px;
+    margin-bottom: 60px
   &__item
-    width: 310px;
-    padding: 20px 0;
-    color: #404F6B;
-    font-size: 16px;
-    line-height: 1;
-    border-bottom: 1px solid #E8E9EB;
+    position relative
+    margin-bottom 20px
+    padding-left 20px
+    color: #404F6B
+    font-size: 16px
+    line-height: 21px
+    &::before
+      position absolute
+      content ''
+      left 0
+      top 2px
+      width 7px
+      height 12px
+      border 2px solid #5C8AE6
+      border-top none
+      border-left none
+      transform rotate(45deg)
+    &--white
+      color #fff
+      &::before
+        border 2px solid #fff
+        border-top none
+        border-left none
   &__cost
-    display: flex
-    flex-direction: column
-    align-items: center
-    margin-bottom: auto
+    margin-bottom 50px
     p
-      font-weight: 500
-      color: #77CE64
+      margin-bottom 10px
+      font-size 36px
+      line-height 46px
+      font-weight: 700
+      color: #5C8AE6
     span
       font-size: 12px
       color: #000
-    height: 35px
+      line-height 15px
+    &--plus
+      p,
+      span
+        color #fff
   &__btn
-    font-size: 14px
+    width 200px
+    padding-top 20px
+    padding-bottom 19px
+    font-size: 16px
     font-weight: 500
-    line-height: 18px
-    border-radius: 23px
-    color: #fff
-    background: #F58240
-    &:hover
-      background-color #FA8846
+    line-height: 21px
+    text-transform uppercase
+    border-radius: 31px
+    color: #5C8AE6
+    border 2px solid #5C8AE6
+    transition backgrond-color .4s ease, color .4s ease
+    &:hover,
+    &:focus
+      color #fff
+      background-color #5C8AE6
+    &--plus
+      color #fff
+      border 2px solid #fff
+      &:hover,
+      &:focus
+        color #FF7043
+        background-color #fff
