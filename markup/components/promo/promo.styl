@@ -83,29 +83,29 @@
   top 175px
   width 600px
   height 338px
-  background-color #fff
   xs-block(@block{
     position relative
     top 0
     width 100%
     height auto
   })
-  xxs-block(@block{
-    background-color transparent
-  })
   a
     position relative
     display block
-    text-align center
     xxs-block(@block{
       height 120px
     })
     &::before
-      position absolute
-      content 'play video'
-      font-size 16px
-      line-height 1
-      color #fff
+      xxs-block(@block{
+        position absolute
+        content 'Watch Video'
+        left 50%
+        bottom 0
+        font-size 16px
+        line-height 1
+        color #fff
+        transform translateX(-50%)
+      })
     &::after
       position absolute
       content ''
@@ -148,6 +148,8 @@
       margin-right auto
     })
     xxs-block(@block{
+      margin-right auto
+      margin-left auto
       font-size 36px
       margin-bottom 50px
     })

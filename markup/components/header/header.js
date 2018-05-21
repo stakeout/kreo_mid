@@ -40,11 +40,11 @@ export const mobileNav = () => {
     });
 };
 
-export const navDropdown = () => {
-    // If a link has a dropdown, add sub menu toggle.
-    $('.navigation__item a:not(:only-child)').click(function(e) {
-      $(this).siblings('.sub-nav').toggle();
-      // Close one dropdown when selecting another
-       e.stopPropagation();
-    });
-}
+// export const navDropdown = () => {
+//     // If a link has a dropdown, add sub menu toggle.
+//     $('.navigation__item a:not(:only-child)').click(function(e) {
+//       $(this).siblings('.sub-nav').toggle();
+//       // Close one dropdown when selecting another
+//        e.stopPropagation();
+//     });
+// }
