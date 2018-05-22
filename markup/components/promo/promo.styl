@@ -1,7 +1,7 @@
 .promo
   &__header
     position relative
-    min-height 620px
+    min-height 500px
     padding-top 95px
     background url('https://www.kreo.net/hubfs/kreo_new/static/img/content/header_pattern.svg') no-repeat,
                linear-gradient(135deg, #304267 0%, #496287 100%)
@@ -27,22 +27,25 @@
       color #fff
     &--view,
     &--plan
-      padding-top 30px
+      padding-top 95px
       padding-bottom 30px
       xs-block(@block{
         padding-top 90px
       })
       h1
+        max-width 550px
         margin-bottom 30px
-        font-size 40px
+        font-size 28px
         line-height 40px
         font-weight 400
         xxs-block(@block{
           font-size 28px
         })
       p:not(.controls__title)
-        font-size 20px
+        max-width 550px
+        font-size 16px
         line-height 30px
+        color rgba(255,255,255,.8)
         xs-block(@block{
           margin-bottom 30px
         })
@@ -80,9 +83,9 @@
         })
 .video-box
   position absolute
-  right 0
-  top 175px
-  width 600px
+  right 15px
+  top 94px
+  width 578px
   height 338px
   xs-block(@block{
     position relative
@@ -97,34 +100,30 @@
       height 120px
     })
     &::before
-      xxs-block(@block{
-        position absolute
-        content 'Watch Video'
-        left 50%
-        bottom 0
-        font-size 16px
-        line-height 1
-        color #fff
-        transform translateX(-50%)
-      })
+      position absolute
+      content ''
+      left 51%
+      top 53%
+      transform translate(-51%, -53%)
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 13px 0 13px 20px;
+      border-color: transparent transparent transparent #fff
+      z-index 1
     &::after
       position absolute
       content ''
-      width 68px
-      height 50px
+      width 100px
+      height 100px
+      background-color: rgba(255,112,66,0.8)
+      border-radius 50%
       left 50%
-      top 50%
-      transform translate(-50%, -50%)
-      border-radius 10px
-      background-color rgba(255,255,255,.7)
-      background-image url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzEwIDMxMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzEwIDMxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI3NXB4IiBoZWlnaHQ9Ijc1cHgiPgo8ZyBpZD0iWE1MSURfODIyXyI+Cgk8cGF0aCBpZD0iWE1MSURfODIzXyIgZD0iTTI5Ny45MTcsNjQuNjQ1Yy0xMS4xOS0xMy4zMDItMzEuODUtMTguNzI4LTcxLjMwNi0xOC43MjhIODMuMzg2Yy00MC4zNTksMC02MS4zNjksNS43NzYtNzIuNTE3LDE5LjkzOCAgIEMwLDc5LjY2MywwLDEwMC4wMDgsMCwxMjguMTY2djUzLjY2OWMwLDU0LjU1MSwxMi44OTYsODIuMjQ4LDgzLjM4Niw4Mi4yNDhoMTQzLjIyNmMzNC4yMTYsMCw1My4xNzYtNC43ODgsNjUuNDQyLTE2LjUyNyAgIEMzMDQuNjMzLDIzNS41MTgsMzEwLDIxNS44NjMsMzEwLDE4MS44MzV2LTUzLjY2OUMzMTAsOTguNDcxLDMwOS4xNTksNzguMDA2LDI5Ny45MTcsNjQuNjQ1eiBNMTk5LjAyMSwxNjIuNDFsLTY1LjAzOCwzMy45OTEgICBjLTEuNDU0LDAuNzYtMy4wNDQsMS4xMzctNC42MzIsMS4xMzdjLTEuNzk4LDAtMy41OTItMC40ODQtNS4xODEtMS40NDZjLTIuOTkyLTEuODEzLTQuODE5LTUuMDU2LTQuODE5LTguNTU0di02Ny43NjQgICBjMC0zLjQ5MiwxLjgyMi02LjczMiw0LjgwOC04LjU0NmMyLjk4Ny0xLjgxNCw2LjcwMi0xLjkzOCw5LjgwMS0wLjMyOGw2NS4wMzgsMzMuNzcyYzMuMzA5LDEuNzE4LDUuMzg3LDUuMTM0LDUuMzkyLDguODYxICAgQzIwNC4zOTQsMTU3LjI2MywyMDIuMzI1LDE2MC42ODQsMTk5LjAyMSwxNjIuNDF6IiBmaWxsPSIjRDgwMDI3Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==')
-      background-repeat no-repeat
-      background-size 75px 75px
-      background-position center
-      cursor pointer
-    &:hover::after
-      background-color rgba(255,255,255,1)
-
+      top 55%
+      transform translate(-50%, -55%)
+    &:hover
+      &::after
+        background-color: rgba(255,112,66,1)
   img
     xxs-block(@block{
       display none
@@ -212,7 +211,7 @@
   line-height 18px
   color #fff
   font-weight 500
-  background-color #F58240
+  background-color #ff7043
   border-radius 23px
   text-align center
   box-shadow: 0 10px 20px 0 rgba(0,32,77,0.18)

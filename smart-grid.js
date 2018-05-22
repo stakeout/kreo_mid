@@ -5,7 +5,7 @@ const settings = {
     offset: '30px',
     container: {
         maxWidth: '1200px',
-        fields: '15px'
+        fields: '30px'
     },
     breakPoints: {
         lg: {

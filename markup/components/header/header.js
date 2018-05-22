@@ -1,12 +1,18 @@
 export const stickyNav = () => {
     const $header = $('.page-header');
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > 75) {
-              $($header).addClass('stick');
-          } else {
-              $($header).removeClass('stick');
-          }
-      });
+    const $logoImg = $('.logo a img');
+    const $links = $('.navigation__link');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 75) {
+            $($header).addClass('stick');
+            $($logoImg).attr('src', 'https://www.kreo.net/hubfs/Kreo_Website/images/global/Kreo_Software_Logo_Dark.svg');
+            $($links).addClass('stick');
+        } else {
+            $($logoImg).attr('src', 'https://www.kreo.net/hubfs/Kreo_Website/images/global/Kreo_Software_Logo_Light.svg');
+            $($header).removeClass('stick');
+            $($links).removeClass('stick');
+        }
+    });
 };
 export const activePageLink = () => {
   const body = document.querySelector('.page');
