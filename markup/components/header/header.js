@@ -2,15 +2,21 @@ export const stickyNav = () => {
     const $header = $('.page-header');
     const $logoImg = $('.logo a img');
     const $links = $('.navigation__link');
+    const $signUp = $('.sign-up');
+    const $signUpHeader = $('.sign-up--header');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 75) {
             $($header).addClass('stick');
             $($logoImg).attr('src', 'https://www.kreo.net/hubfs/Kreo_Website/images/global/Kreo_Software_Logo_Dark.svg');
             $($links).addClass('stick');
+            $($signUp).addClass('stick');
+            $($signUpHeader).addClass('stick');
         } else {
             $($logoImg).attr('src', 'https://www.kreo.net/hubfs/Kreo_Website/images/global/Kreo_Software_Logo_Light.svg');
             $($header).removeClass('stick');
             $($links).removeClass('stick');
+            $($signUp).removeClass('stick');
+            $($signUpHeader).removeClass('stick');
         }
     });
 };
