@@ -4,6 +4,7 @@ export const stickyNav = () => {
     const $links = $('.navigation__link');
     const $signUp = $('.sign-up');
     const $signUpHeader = $('.sign-up--header');
+    const $body = $('body');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 75) {
             $($header).addClass('stick');
@@ -15,6 +16,9 @@ export const stickyNav = () => {
             $($signUpHeader).removeClass('stick');
         }
     });
+    if($body.hasClass('page--plan')) {
+      $signUp.text('Sign Up Beta');
+    }
 };
 export const activePageLink = () => {
   const body = document.querySelector('.page');
