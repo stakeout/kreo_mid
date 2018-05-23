@@ -7,14 +7,10 @@ export const stickyNav = () => {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 75) {
             $($header).addClass('stick');
-            $($logoImg).attr('src', 'https://www.kreo.net/hubfs/Kreo_Website/images/global/Kreo_Software_Logo_Dark.svg');
-            $($links).addClass('stick');
             $($signUp).addClass('stick');
             $($signUpHeader).addClass('stick');
         } else {
-            $($logoImg).attr('src', 'https://www.kreo.net/hubfs/Kreo_Website/images/global/Kreo_Software_Logo_Light.svg');
             $($header).removeClass('stick');
-            $($links).removeClass('stick');
             $($signUp).removeClass('stick');
             $($signUpHeader).removeClass('stick');
         }
@@ -24,7 +20,7 @@ export const activePageLink = () => {
   const body = document.querySelector('.page');
   const navItems = document.querySelectorAll('.navigation__item');
   const products = document.querySelector('.navigation__item.dropdown');
-  for (var i =0; i < navItems.length; ++i) {
+  for (var i = 0; i < navItems.length; ++i) {
     navItems[i].classList.remove('navigation__item--active')
   }
   if (body.classList.contains('page--view') || body.classList.contains('page--plan')) {

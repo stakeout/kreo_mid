@@ -13,9 +13,7 @@
   })
   &.stick
     position fixed
-    transition: all 0.4s ease-in-out;
-    background: rgba(255,255,255,1)
-    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.19)
+    background linear-gradient(135deg, #304267 0%, #496287 100%)
     z-index 100
   &__inner
     position relative
@@ -155,10 +153,10 @@
       position absolute
       content ''
       width 0
-      height 2px
+      height 1px
       left 0
       bottom -10px
-      background-color: #F58240;
+      background-color: #ff7043
       transition width .3s ease
       xs-block(@block{
         bottom 3px
@@ -191,7 +189,7 @@
     &:not(:last-child)
       border-bottom 1px solid rgba(0,0,0,.05)
     &:not(:last-child):hover
-      background-color: #F0F2F5
+      background-color: #E6EEFA
   &__link
     display block
     height 45px

@@ -103,21 +103,31 @@
   display block
   height 100%
   font-size 0
+  &::before
+    position absolute
+    content ''
+    left 50.5%
+    top 53.5%
+    transform translate(-50.5%, -53.5%)
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 18px;
+    border-color: transparent transparent transparent #fff
+    border-radius 3px
+    z-index 1
   &::after
     position absolute
     content ''
-    width 68px
-    height 50px
+    width 70px
+    height 70px
+    background-color: rgba(255,112,66,0.8)
+    border-radius 50%
     left 50%
-    top 50%
-    transform translate(-50%, -50%)
-    border-radius 10px
-    background-color rgba(255,255,255,.7)
-    background-image url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzEwIDMxMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzEwIDMxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI3NXB4IiBoZWlnaHQ9Ijc1cHgiPgo8ZyBpZD0iWE1MSURfODIyXyI+Cgk8cGF0aCBpZD0iWE1MSURfODIzXyIgZD0iTTI5Ny45MTcsNjQuNjQ1Yy0xMS4xOS0xMy4zMDItMzEuODUtMTguNzI4LTcxLjMwNi0xOC43MjhIODMuMzg2Yy00MC4zNTksMC02MS4zNjksNS43NzYtNzIuNTE3LDE5LjkzOCAgIEMwLDc5LjY2MywwLDEwMC4wMDgsMCwxMjguMTY2djUzLjY2OWMwLDU0LjU1MSwxMi44OTYsODIuMjQ4LDgzLjM4Niw4Mi4yNDhoMTQzLjIyNmMzNC4yMTYsMCw1My4xNzYtNC43ODgsNjUuNDQyLTE2LjUyNyAgIEMzMDQuNjMzLDIzNS41MTgsMzEwLDIxNS44NjMsMzEwLDE4MS44MzV2LTUzLjY2OUMzMTAsOTguNDcxLDMwOS4xNTksNzguMDA2LDI5Ny45MTcsNjQuNjQ1eiBNMTk5LjAyMSwxNjIuNDFsLTY1LjAzOCwzMy45OTEgICBjLTEuNDU0LDAuNzYtMy4wNDQsMS4xMzctNC42MzIsMS4xMzdjLTEuNzk4LDAtMy41OTItMC40ODQtNS4xODEtMS40NDZjLTIuOTkyLTEuODEzLTQuODE5LTUuMDU2LTQuODE5LTguNTU0di02Ny43NjQgICBjMC0zLjQ5MiwxLjgyMi02LjczMiw0LjgwOC04LjU0NmMyLjk4Ny0xLjgxNCw2LjcwMi0xLjkzOCw5LjgwMS0wLjMyOGw2NS4wMzgsMzMuNzcyYzMuMzA5LDEuNzE4LDUuMzg3LDUuMTM0LDUuMzkyLDguODYxICAgQzIwNC4zOTQsMTU3LjI2MywyMDIuMzI1LDE2MC42ODQsMTk5LjAyMSwxNjIuNDF6IiBmaWxsPSIjRDgwMDI3Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==')
-    background-repeat no-repeat
-    background-size 75px 75px
-    background-position center
-  &:hover::after
-    background-color rgba(255,255,255,1)
+    top 55%
+    transform translate(-50%, -55%)
+  &:hover
+    &::after
+      background-color: rgba(255,112,66,1)
   img
     position relative
