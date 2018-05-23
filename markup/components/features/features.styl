@@ -41,6 +41,17 @@
   &__hint
     position relative
     margin-top 20px
+    &::after
+      position absolute
+      content ''
+      top 99%
+      left 0
+      height 20px
+      width 100%
+    &:hover,
+    &:focus
+      & > .hint-wrapper
+        display block
     span
       display inline-block
       vertical-align top
@@ -49,10 +60,6 @@
       line-height 22px
       font-weight 500
       text-transform uppercase
-      &:hover,
-      &:focus
-        & + .hint-wrapper
-          display block
       i
         display inline-block
         vertical-align top
@@ -60,7 +67,7 @@
         font-style normal
 .hint-wrapper
   position absolute
-  left -40px
+  left 0
   top 30px
   width 500px
   display none
@@ -99,6 +106,8 @@
         height 6px
         background-color: #F58240
         border-radius 50%
+  a
+    color #ff7043
 .youtube-video
   position relative
   display block
