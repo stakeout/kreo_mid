@@ -18,7 +18,8 @@ const settings = {
             width: '576px'
         },
         xs: {
-            width: '480px'
+            width: '480px',
+            fields: '15px'
         },
         xxs: {
             width: '320px'
