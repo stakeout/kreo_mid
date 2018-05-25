@@ -93,9 +93,8 @@
       text-align center
     })
   .hs-form input[type="email"]
-    width 300px
+    width 100%
     height 45px
-    margin-right 20px
     padding 0 20px
     color #fff
     font-size 14px
@@ -103,30 +102,37 @@
     border-radius 60px
     background-color transparent
     border 1px solid #fff
-    lg-block(@block{
-      width 270px
-    })
     xs-block(@block{
       margin-right 0
       width 100%
     })
-  .hs-form {
+  .hs-form
     display flex
     flex-wrap wrap
     justify-content space-between
     max-width 530px
-    .hs_error_rollup {
+    lg-block(@block{
+      justify-content flex-start
+    })
+    .hs_error_rollup
       display none
-    }
-  }
+
   .hs-form .hs_email
     width 300px
+    lg-block(@block{
+      width 250px
+      margin-right 15px
+    })
     xs-block(@block{
       width 100%
       margin-bottom 20px
+      margin-right 0
     })
   .hs-form .hs_submit
     width 220px
+    lg-block(@block{
+      width 185px
+    })
     xs-block(@block{
       margin 0 auto
     })

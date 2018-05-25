@@ -71,8 +71,7 @@
 .hs-form input[type=submit]
   font-family: inherit
   display: block
-  min-width: 220px
-  margin 0 auto
+  width: 220px
   padding: 15px 40px
   font-size: 16px
   border-radius: 60px
@@ -91,9 +90,9 @@
   &:hover,
   &:focus
     background-color #FF8962
-// .hs_form,
-// .hs_firstname
-//   margin-right 10px
+  lg-block(@block{
+    width 175px
+  })
 /* Multi-line inputs (selectors to target multi-line fields */
 .hs-form textarea
   width 99%!important
