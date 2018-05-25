@@ -29,6 +29,9 @@
     &--plan
       padding-top 95px
       padding-bottom 30px
+      lg-block(@block{
+        padding-bottom 0
+      })
       xs-block(@block{
         padding-top 90px
       })
@@ -46,6 +49,9 @@
         font-size 16px
         line-height 30px
         color rgba(255,255,255,.8)
+        lg-block(@block{
+          margin-bottom 20px
+        })
         xs-block(@block{
           margin-bottom 30px
         })
@@ -86,7 +92,13 @@
   right 15px
   top 94px
   width 578px
-  height 338px
+  lg-block(@block{
+    position static
+    right auto
+    top auto
+    width 570px
+    margin 0 auto
+  })
   xs-block(@block{
     position relative
     top 0
@@ -126,6 +138,7 @@
       &::after
         background-color: rgba(255,112,66,1)
   img
+    display block
     xxs-block(@block{
       display none
     })

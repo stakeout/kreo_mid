@@ -19,6 +19,8 @@
   &__card
     col()
     size(4)
+    size-lg(5)
+    size-md(6)
     size-xs(12)
     display flex
     flex-direction: column
@@ -32,6 +34,9 @@
     &:not(:last-child)
       color #404F6B
       margin-right 45px
+      md-block(@block{
+        margin-right 15px
+      })
       xs-block(@block{
         margin-right 15px
         margin-bottom 20px
