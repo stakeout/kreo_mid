@@ -15,5 +15,5 @@ $(() => {
   stickyNav();
   mobileNav();
   activePageLink();
-  $(".solutions__inner").tabs();
+  $(".solutions__tabs-wrapper").tabs();
 })

@@ -1,8 +1,6 @@
 .solutions
   background-color: #F5F7FA
   &__inner
-    display flex
-    flex-wrap wrap
     padding-top 60px
     padding-bottom 120px
     xs-block(@block{
@@ -20,28 +18,38 @@
     xs-block(@block{
       margin-bottom 60px
     })
+  &__list-title
+    margin-bottom 10px
+    color #343948
+    font-size 16px
+    line-height 20px
+    font-weight 500
+  &__tabs-wrapper
+    display flex
+    lg-block(@block{
+      flex-wrap wrap
+    })
   &__controls
     border-radius 3px 0 0 3px
     background: linear-gradient(60deg,#c5ccd6 0%,#e1e7f0 100%)
     box-shadow: 0 10px 30px 0 rgba(51,56,71,0.08)
     lg-block(@block{
       display flex
+      flex-grow 1
     })
     xs-block(@block{
       display block
-      flex-grow 1
     })
   &__item
-    flex-basis 350px
-    height 90px
-    padding 0 40px
-    font-size 18px
-    line-height 90px
+    width 370px
+    padding 40px
+    font-size 16px
     font-weight 400
+    line-height 1.2
+    text-transform uppercase
     cursor pointer
     lg-block(@block{
-      height 80px
-      line-height 80px
+      padding 30px 20px
     })
     xs-block(@block{
       height auto
@@ -93,13 +101,13 @@
       padding 20px
     })
     ul
-      max-width 670px
+      margin-bottom 10px
       li
         position relative
         padding-left 20px
-        color #455a64
+        color #343948
         font-size 16px
-        line-height 2
+        line-height 20px
         font-weight 400
         xs-block(@block{
           line-height 1.5
@@ -113,33 +121,35 @@
           height 6px
           background-color: #F58240
           border-radius 50%
-      a
-        color #f58240
+    .second-lvl
+      li
+        padding-left 10px
+        color #748091
         font-size 14px
-        text-transform none
+        line-height 16px
+        &::before
+          display none
     a
+      display block
+      padding-top 20px
       color #5C8AE6
       font-size 14px
       line-height 24px
       font-weight 600
       text-transform uppercase
-      xs-block(@block{
-        flex-grow 1
-        padding-top 20px
-        text-align center
-      })
+      text-align center
   &__footer
     background-color: #F5F7FA
 .tab-content:first-child
-  background: url("https://www.kreo.net/hubfs/kreo_new/static/img/content/bim_professionals.png") center top no-repeat
-  background-size 100% 130px
-.tab-content:nth-child(2)
   background: url("https://www.kreo.net/hubfs/kreo_new/static/img/content/quantity_surveyors.png") center top no-repeat
   background-size 100% 130px
-.tab-content:nth-child(3)
+.tab-content:nth-child(2)
   background: url("https://www.kreo.net/hubfs/kreo_new/static/img/content/project_managers_planners.png") center top no-repeat
   background-size 100% 130px
-.tab-content:last-child
-  background: url("https://www.kreo.net/hubfs/kreo_new/static/img/content/contract_managers_bid_managers.png") center top no-repeat
+.tab-content:nth-child(3)
+  background: url("https://www.kreo.net/hubfs/kreo_new/static/img/content/bim_professionals.png") center top no-repeat
   background-size 100% 130px
+// .tab-content:last-child
+//   background: url("https://www.kreo.net/hubfs/kreo_new/static/img/content/contract_managers_bid_managers.png") center top no-repeat
+//   background-size 100% 130px
 

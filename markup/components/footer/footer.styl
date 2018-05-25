@@ -43,7 +43,8 @@
     a
       display block
       padding 10px 0
-      font-size 16px
+      font-size 14px
+      font-weight 300
       letter-spacing 0.2px
       color #fff
       text-transform uppercase
@@ -76,10 +77,14 @@
     xs-block(@block{
       text-align center
     })
+    md-block(@block{
+      font-size 22px
+    })
   p
     margin-bottom 80px
     color #fff
     font-size 16px
+    font-weight 300
     lg-block(@block{
       margin-bottom 40px
     })
@@ -93,7 +98,8 @@
     margin-right 20px
     padding 0 20px
     color #fff
-    font-size 16px
+    font-size 14px
+    font-weight 300
     border-radius 60px
     background-color transparent
     border 1px solid #fff
@@ -108,7 +114,7 @@
     display flex
     flex-wrap wrap
     justify-content space-between
-    max-width 550px
+    max-width 530px
     .hs_error_rollup {
       display none
     }
@@ -124,10 +130,10 @@
     xs-block(@block{
       margin 0 auto
     })
-  ::-webkit-input-placeholder { color: #f5f5f5; }
-  ::-moz-placeholder          { color: #f5f5f5; } /* Firefox 19+ */
-  :-moz-placeholder           { color: #f5f5f5; } /* Firefox 18- */
-  :-ms-input-placeholder      { color: #f5f5f5; }
+  ::-webkit-input-placeholder { color: #f5f5f5; font-size: 14px; font-weight: 300; }
+  ::-moz-placeholder          { color: #f5f5f5; font-size: 14px; font-weight: 300; } /* Firefox 19+ */
+  :-moz-placeholder           { color: #f5f5f5; font-size: 14px; font-weight: 300; } /* Firefox 18- */
+  :-ms-input-placeholder      { color: #f5f5f5; font-size: 14px; font-weight: 300; }
 .copyright
   flex-grow 1
   font-size 16px
