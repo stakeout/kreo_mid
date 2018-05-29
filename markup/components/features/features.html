@@ -22,8 +22,8 @@
           </div>
           {{#if this.hint}}
             <div class="features__hint">
-              <span>more info <i>&#9432;</i></span>
-              <div class="hint-wrapper">
+              <a href="#item-{{iter}}" data-lity>more info <i>&#9432;</i></a>
+              <div id="item-{{iter}}" class="hint-wrapper lity-hide">
                 {{#if hint.title}}
                   <p>{{{hint.title}}}</p>
                 {{/if}}

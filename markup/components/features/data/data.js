@@ -1,10 +1,11 @@
 features: {
   kreoPlan: [
-    {
+      {
       title: 'BIM Model Validation',
       url: 'JZ9Lvl1wGp4',
       srcId: 'JZ9Lvl1wGp4',
       imgVer: '1',
+      iter: "inline",
       hint: {
         title: 'KREO uses machine learning to identify and classify BIM model elements. It takes into account both the geometry of a BIM element and its other attributes, ensuring the highest accuracy of the classification. With KREO you can be sure that all BIM elements are accounted for.',
         list: [
@@ -22,6 +23,7 @@ features: {
       url: 'SZJgGgrxr-s',
       srcId: 'SZJgGgrxr-s',
       imgVer: '1',
+      iter: 2,
       hint: {
         title: 'KREO generates detailed bills of quantities by default. It performs quantity take-off for each BIM element according to the units of measurement specified in the model and follows the NRM requirements',
         list: [
@@ -45,6 +47,7 @@ features: {
       url: 'Veq8F3BXRho',
       srcId: 'Veq8F3BXRho',
       imgVer: '1',
+      iter: 3,
       hint: {
         title: 'KREO automatically generates the cost estimate of a BIM construction project. It uses AI to assign activities and resources to each BIM element. KREO provides full integration with leading cost data providers - <a href="http://www.rics.org/uk/knowledge/bcis/">BCIS</a> in the UK or <a href="https://www.rsmeans.com/products/online.aspx">RS Means</a> in the US and Canada. You can also use your internal cost database. The estimate provides a detailed breakdown of costs for each activity (labour, plant and materials). KREO takes into consideration the following factors that influence a cost budget:',
         list: [
@@ -71,6 +74,7 @@ features: {
       url: 'OoZ3s8fjcyQ',
       srcId: 'OoZ3s8fjcyQ',
       imgVer: '1',
+      iter: 4,
       hint: {
         title: 'KREO developed an AI-based optimisation and scheduling engine to create a project master schedule. It runs a large number of simulations to find an optimal balance between cost and time. To achieve this balance KREO considers the following factors:',
         list: [
@@ -98,6 +102,7 @@ features: {
       url: '8WmR3Ru9q68',
       srcId: '8WmR3Ru9q68',
       imgVer: '1',
+      iter: 5,
       hint: {
         title: 'Create a whole range of scenarios for a project schedule and cost. Analyse significant cost and duration drivers. Test your assumption in a matter of minutes. <br><br> A side-by-side scenario comparison is a powerful tool for:',
         list: [
@@ -121,6 +126,7 @@ features: {
       url: '57i2FWnmgsQ',
       srcId: '57i2FWnmgsQ',
       imgVer: '1',
+      iter: 6,
       hint: {
         title: 'KREO developed a unique platform for online tendering and bidding for BIM-based projects. With KREO, bid managers can price bids and get pre-tender estimates within days. KREO breaks the whole project into work packages by default. It groups activities by trade and ensures their uninterrupted flow. You can adjust package size and composition without much effort. <br><br> Once you are happy with work packages, you can use KREO\'s online platform to launch RFQs, RFPs and tenders. You can invite bidders by email. After registration and authentication, bidders can access their package information online. They have access to detailed bills of quantities, a project schedule and 4D model.<br><br> The bidders can submit their bids online by filling in online forms. Following the submission, KREO compares the bids and ranks them. You can shortlist and nominate winners and notify them online. Finally, you can check the impact of the selected bids on the project master schedule and cost budget.',
         list: [
@@ -151,6 +157,7 @@ features: {
     {
       title: 'Dashboard with Analytics',
       bg: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/dashboard_with_analytics.png',
+      iter: 7,
       hint: {
         title: 'KREO brings all the essential information relevant to a project to interactive dashboards.  A visual presentation of the data helps to identify areas requiring further analysis. It also makes communication with key stakeholders and decision-makers much easier.',
         list: [
@@ -172,6 +179,7 @@ features: {
     {
       title: 'Knowledge Base & Database Management Tools',
       bg: 'https://www.kreo.net/hubfs/kreo_new/static/img/content/kb_db_management_tools.png',
+      iter: 8,
       hint: {
         title: 'Whether it is a new construction method, sequence logic or a business rule, KREO can help you capture this knowledge and re-use it. With each new BIM project, the accumulated knowledge improves the speed and quality of the outputs.<br><br> This combination of expert knowledge and machine intelligence has the potential to transform your business',
         list: [

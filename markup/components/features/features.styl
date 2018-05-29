@@ -48,11 +48,11 @@
       left 0
       height 20px
       width 100%
-    &:hover,
-    &:focus
-      & > .hint-wrapper
-        display block
-    span
+    // &:hover,
+    // &:focus
+    //   & > .hint-wrapper
+    //     display block
+    a
       display inline-block
       vertical-align top
       color #5C8AE6
@@ -66,12 +66,12 @@
         font-size 16px
         font-style normal
 .hint-wrapper
-  position absolute
-  left 0
-  top 30px
-  width 500px
-  display none
-  padding 15px
+  // position absolute
+  // left 0
+  // top 30px
+  width 800px
+  // display none
+  padding 26px 30px 30px
   background-color #fff
   box-shadow: 0 1px 13px 0 rgba(52,57,72,0.08)
   border-radius 3px
@@ -86,17 +86,18 @@
     margin-bottom 20px
     color #000
     font-weight 400
-    font-size 16px
+    font-size 14px
     line-height 20px
   ul
     max-width 300px
     li
       position relative
-      padding-left 20px
+      padding-left 16px
       color #455a64
-      font-size 16px
-      line-height 1.3
-      font-weight 400
+      font-size 14px
+      line-height 1.5
+      font-weight 300
+      margin-bottom 10px
       &::before
         position absolute
         content ''

@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  {{> head/head head.defaults}}
+</head>
+
+<body class="page">
+  %=symbols=%
+
+  <div class="page__inner">
+    <header class="page-header">
+      <div class="page-header__inner container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="https://cdn2.hubspot.net/hubfs/3921830/Kreo_Website/images/global/Kreo_Software_Logo_Light.svg?t=1527506742292" width="100" height="60" alt="" class="logo__img">
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item dropdown">
+              <a class="navigation__link">Products</a>
+              <ul class="sub-nav">
+                <li class="sub-nav__item">
+                  <a href="kreo-view.html" class="sub-nav__link">Kreo View</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="kreo-plan.html" class="sub-nav__link">Kreo Plan</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link coming">Kreo Design</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a href="https://www.kreo.net/blog" class="navigation__link">Blog</a>
+            </li>
+            <li class="navigation__item">
+              <a href="contacts.html" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="https://app.kreo.net/auth/signup" class="sign-up sign-up--header btn btn--orange">Sign Up Free</a>
+        <button id="nav-toggle" class="page-header__nav-toggle">
+          <span class="burger">Menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-content">
+<!--       <section class="promo">
+        <div class="promo__inner">
+          <header class="promo__header">
+            <div class="container">
+              <h1>BIM Construction with Intelligence</h1>
+              <p>Artificial Intelligence for better and faster BIM design collaboration and construction cost estimating, scheduling and bidding.</p>
+            </div>
+          </header>
+          <div class="promo__content container">
+            <section class="promo-post">
+
+
+
+              <div class="promo-post__data">
+
+                <ul class="categories">
+
+                  <li class="categories__item"><a class="categories__link" href="https://www.kreo.net/blog/topic/ai">AI |</a></li>
+
+                  <li class="categories__item"><a class="categories__link" href="https://www.kreo.net/blog/topic/bim">BIM |</a></li>
+
+                  <li class="categories__item"><a class="categories__link" href="https://www.kreo.net/blog/topic/industry-insight">Industry Insight |</a></li>
+
+                </ul>
+
+                <h2 class="promo-post__title heading heading--h2"><a href="https://www.kreo.net/blog/why-automation-in-the-construction-industry-will-unleash-not-limit-creativity">Why Automation in the Construction Industry Will UNLEASH, Not Limit Creativity!</a></h2>
+                <div class="promo-post__date"><strong>Magomed Galaev</strong> | 07-May-2018 10:00:00</div>
+                <div class="promo-post__description">
+
+
+
+                  <p><strong>Most construction professionals are already somewhat sold on the value of computers – but, when it comes to unlocking their full potential, they're only just scratching the surface.</strong></p>
+
+
+                </div>
+
+
+
+              </div>
+
+            </section>
+          </div>
+        </div>
+      </section> -->
+
+      {{> blog-data-list/blog-data-list}}
+
+    </main>
+
+    {{> footer/footer}}
+
+  </div>
+
+
+  <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+
+  <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+  <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>

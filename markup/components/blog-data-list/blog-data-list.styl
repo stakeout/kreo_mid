@@ -1,0 +1,81 @@
+.blog-data
+  padding-top 100px
+  &__list
+    row-flex()
+  &__item
+    col()
+    size(4)
+    margin-bottom 30px
+    transition all .4s ease-in-out
+    box-shadow 0 2px 4px 0 rgba(0,0,0,0.13)
+    &:hover
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.21)
+    &:first-child
+      display none
+    &:nth-child(2)
+      size(8)
+    &.subscribe-to
+      display -webkit-flex
+      display -moz-flex
+      display -ms-flex
+      display -o-flex
+      display flex
+      flex-direction column
+      align-items center
+      padding 30px 0 60px
+      background-color #49495e
+      text-align center
+      background-image url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI3Ljg1NyAyNy44NTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI3Ljg1NyAyNy44NTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yLjIwMyw1LjMzMWwxMC4wMzQsNy45NDhjMC40NTUsMC4zNiwxLjA4MiwwLjUyLDEuNjkxLDAuNDljMC42MDgsMC4wMywxLjIzNS0wLjEyOSwxLjY5LTAuNDkgICAgbDEwLjAzNC03Ljk0OGMwLjgwNC0wLjYzMywwLjYyMi0xLjE1Mi0wLjM5OC0xLjE1MkgxMy45MjlIMi42MDRDMS41ODMsNC4xNzksMS40MDEsNC42OTgsMi4yMDMsNS4zMzF6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTI2LjM3Nyw3LjQyOGwtMTAuOTY1LDguMzI1Yy0wLjQxLDAuMzA4LTAuOTQ3LDAuNDU4LTEuNDgyLDAuNDUxICAgIGMtMC41MzYsMC4wMDctMS4wNzMtMC4xNDQtMS40ODMtMC40NTFMMS40OCw3LjQyOEMwLjY2Niw2LjgxMSwwLDcuMTQyLDAsOC4xNjN2MTMuNjU5YzAsMS4wMjEsMC44MzYsMS44NTcsMS44NTcsMS44NTdoMTIuMDcxSDI2ICAgIGMxLjAyMSwwLDEuODU3LTAuODM2LDEuODU3LTEuODU3VjguMTYzQzI3Ljg1Nyw3LjE0MiwyNy4xOTEsNi44MTEsMjYuMzc3LDcuNDI4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=')
+      background-repeat no-repeat
+      background-size 80px 80px
+      background-position center 50px
+      p
+        max-width 300px
+        margin auto auto 20px
+        font-size 30px
+        text-transform uppercase
+        color #fff
+      a
+        width 220px
+        padding 15px 0
+        font-size 16px
+        color #fff
+        border-radius 30px
+        text-transform uppercase
+  &__img-wrap
+    display block
+    & > img
+      display block
+      width 100%
+      height 200px
+  &__content-wrapper
+    padding 20px
+
+  &__content
+    font-size 14px
+    color #72808e
+    word-wrap break-word
+    line-height 1.5
+    strong
+      font-weight 700
+  &__item-title
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    margin 0 0 9px
+    a
+      font-size 20px
+      line-height 1.45
+      letter-spacing .3px
+      color #45474d
+      font-weight 400
+  &__date
+    display none
+.categories
+  display flex
+  &__link
+    font-size 10px
+    line-height 2
+    font-weight 300
+    color #3197d6
+    text-transform uppercase

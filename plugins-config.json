@@ -6,7 +6,7 @@
 
     "browserSync": {
         "startPath": "/index.html",
-        "proxy": "kreo.dev",
+        "proxy": "kreo.mid",
         // "server": {
         //     "baseDir": "./dev"
         // },
