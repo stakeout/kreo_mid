@@ -1,0 +1,47 @@
+{% if is_listing_view %}
+<section class="blog-data">
+  <div class="blog-data__inner">
+
+    <ul class="blog-data__list">
+      {% for content in contents %}
+      <li class="blog-data__item">
+        <a class="blog-data__img-wrap" href="{{content.absolute_url}}">
+          <img src="{{ content.post_list_summary_featured_image }}" alt="{{content.name}}" />
+        </a>
+
+        <div class="blog-data__content-wrapper">
+          {% if content.topic_list %}
+          <ul class="categories">
+            {% for topic in content.topic_list %}
+            <li class="categories__item"><a class="categories__link" href="{{ group.absolute_url }}/topic/{{ topic.slug }}">{{ topic.name }} |</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          <h2 class="blog-data__item-title heading heading--h2"><a href="{{content.absolute_url}}">{{ content.name }}</a></h2>
+          <div class="blog-data__content">
+           {{ content.post_list_content|safe }}
+          </div>
+          <div class="blog-data__date"><span>{{ content.blog_author.display_name }}</span> | {{ content.publish_date_localized }}</div>
+
+        </div>
+     </li>
+     {% endfor %}
+   </ul>
+ </div>
+</section> <!-- end of blog listing -->
+{% else %}
+  <article class="blog-post">
+    <ul class="blog-socials">
+      <li class="blog-socials__item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url|urlencode }}" class="blog-socials__link blog-socials__link--fb" target="_blank"></a></li>
+      <li class="blog-socials__item"><a href="https://www.twitter.com/share?url={{ content.absolute_url|urlencode }}" class="blog-socials__link blog-socials__link--tw" target="_blank"></a></li>
+      <li class="blog-socials__item"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}" class="blog-socials__link blog-socials__link--linkedin" target="_blank"></a></li>
+    </ul>
+    <div class="blog-post__inner">
+      <h1 class="blog-post__title">{{content.name}}</h1>
+      <div class="blog-post__content">
+        {{content.post_body}}
+      </div>
+    </div>
+  </article>
+{% endif %}

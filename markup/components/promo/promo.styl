@@ -244,4 +244,40 @@
     opacity 0
     &.stick
       opacity 1
-
+.page-content--blog
+  .promo__content
+    padding-top 0
+    padding-bottom 0
+  .categories
+    display none
+.promo-post
+  position relative
+  max-width 780px
+  margin-top -100px
+  &::before
+    position absolute
+    content ''
+    right 0
+    width 100vw
+    height 100%
+    background-color #ff7043
+    z-index 1
+  &__title.heading
+    margin-bottom 20px
+    a
+      font-size 30px
+      color #fff
+      line-height 1.5
+  &__data
+    position relative
+    padding 20px 0
+    z-index 2
+  &__description
+    p
+     color #fff
+     font-size 16px
+     line-height 1.3
+     strong
+       font-weight 400
+  &__date
+    display none
