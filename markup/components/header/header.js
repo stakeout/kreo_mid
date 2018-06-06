@@ -37,7 +37,9 @@ export const activePageLink = () => {
   if (body.classList.contains('page--contacts')) {
     navItems[3].classList.add('navigation__item--active');
   }
-
+  if (body.classList.contains('page--blog')) {
+    navItems[2].classList.add('navigation__item--active');
+  }
 }
 export const mobileNav = () => {
     const navBtn = document.querySelector('#nav-toggle');

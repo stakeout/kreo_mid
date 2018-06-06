@@ -1,10 +1,14 @@
 .blog-data
-  padding-top 100px
+  &__inner
+    padding-top 120px
+    padding-bottom 40px
   &__list
     row-flex()
   &__item
     col()
     size(4)
+    size-md(6)
+    size-xs(12)
     margin-bottom 30px
     transition all .4s ease-in-out
     box-shadow 0 2px 4px 0 rgba(0,0,0,0.13)
@@ -12,6 +16,8 @@
       box-shadow: 0 3px 10px 0 rgba(0,0,0,0.21)
     &:first-child
       size(8)
+      size-md(6)
+      size-xs(12)
     &.subscribe-to
       display -webkit-flex
       display -moz-flex
@@ -27,6 +33,10 @@
       background-repeat no-repeat
       background-size 80px 80px
       background-position center 50px
+      size-md(6)
+      xs-block(@block{
+        display none
+      })
       p
         max-width 300px
         margin auto auto 20px
