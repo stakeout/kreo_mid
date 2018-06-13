@@ -18,6 +18,7 @@ export const stickyNav = () => {
     });
     if($body.hasClass('page--plan')) {
       $signUp.text('Sign Up Beta');
+      $signUp.attr('href','#signUpBeta');
     }
 };
 export const activePageLink = () => {

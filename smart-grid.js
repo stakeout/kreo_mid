@@ -15,7 +15,7 @@ const settings = {
             width: '768px'
         },
         sm: {
-            width: '576px'
+            width: '767px'
         },
         xs: {
             width: '480px',

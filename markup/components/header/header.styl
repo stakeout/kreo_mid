@@ -31,9 +31,12 @@
     font-size 0
     background-color transparent
     border none
-    xs-block(@block{
+    sm-block(@block{
       display block
       position absolute
+      right 30px
+    })
+    xs-block(@block{
       right 15px
     })
     span
@@ -83,7 +86,7 @@
   &.open
     opacity 1
     transform scale(1)
-  xs-block(@block{
+  sm-block(@block{
     position absolute
     top 100%
     bottom 0
@@ -98,7 +101,7 @@
     display flex
     align-items center
     height inherit
-    xs-block(@block{
+    sm-block(@block{
       display block
       height auto
       background-color #fcfcfc
@@ -108,20 +111,20 @@
     display flex
     align-items center
     height inherit
-    xs-block(@block{
+    sm-block(@block{
       display flex
       justify-content center
       width 100%
     })
     &.dropdown
-      xs-block(@block{
+      sm-block(@block{
         flex-wrap: wrap;
       })
     &--active > a::after
       width 100%
     &:not(:last-child)
       margin-right 40px
-      xs-block(@block{
+      sm-block(@block{
         margin-right 0
         border-bottom 1px solid rgba(0,0,0,.05)
       })
@@ -129,7 +132,7 @@
       display block
     &:hover:not(.dropdown) > a::after
       width 100%
-      xs-block(@block{
+      sm-block(@block{
         width 0
       })
   &__link
@@ -142,7 +145,7 @@
     text-transform uppercase
     &.stick
       color #304267
-    xs-block(@block{
+    sm-block(@block{
       display block
       color #304267
       padding 20px 30px
@@ -156,8 +159,8 @@
       bottom -10px
       background-color: #ff7043
       transition width .3s ease
-      xs-block(@block{
-        bottom 3px
+      sm-block(@block{
+        bottom 0
       })
 .sub-nav
   display none
@@ -168,7 +171,7 @@
   border-radius 5px
   box-shadow: 0 2px 10px 0 rgba(52,57,72,0.14);
   z-index 100
-  xs-block(@block{
+  sm-block(@block{
     display block
     position relative
     width 100%
@@ -199,7 +202,7 @@
     color #404F6B
     line-height 45px
     text-transform uppercase
-    xs-block(@block{
+    sm-block(@block{
       padding-left 0
       text-align center
     })
