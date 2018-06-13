@@ -2,14 +2,13 @@
   &__inner
     position: relative;
     display: flex;
-    width: 1000px;
     margin: 0 auto;
     xs-block(@block{
       width 100%
     })
   &__form-wrap
     position: relative;
-    width: 650px;
+    max-width: 650px;
     padding: 40px 20px;
     box-sizing: border-box;
     background: #fff;
@@ -21,6 +20,9 @@
     align-items: center;
     width: 350px;
     background: #2b598f;
+    to(991px, @block{
+      display none
+    })
     xs-block(@block{
       display none
     })
@@ -102,3 +104,12 @@
         border-top: transparent;
         border-right: transparent;
         transform: rotate(-45deg);
+  .hs-form input[type="text"], .hs-form input[type="email"], .hs-form input[type="tel"]
+    lg-block(@block{
+      width 275px
+    })
+    to(991px, @block{
+      width 100%
+    })
+.hs-form-24fee465-ad24-41a8-8e6a-1b10414f9cfd_2f102722-35c3-4701-9927-52ea74b1ee68 .form-columns-2 .hs-form-field
+  width 49%
