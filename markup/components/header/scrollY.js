@@ -1,10 +1,10 @@
-  const body = $('.page');
-  const popupActive = $('.lity-opened');
+const body = $('.page');
 
-  $('a[data-lity]').on('click', function() {
+
+$(document).on('lity:open', function(event, instance) {
     body.addClass('vertical-scroll-disable');
-  })
+});
+$(document).on('lity:close', function(event, instance) {
+    body.removeClass('vertical-scroll-disable');
+});
 
-  $('.lity-wrap').on('click', function(){
-      body.removeClass('vertical-scroll-disable');
-  })

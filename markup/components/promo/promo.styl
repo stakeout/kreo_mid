@@ -30,7 +30,7 @@
     &--plan
       padding-top 95px
       padding-bottom 30px
-      lg-block(@block{
+      to(1160px, @block{
         padding-bottom 0
       })
       xs-block(@block{
@@ -93,7 +93,7 @@
   right 15px
   top 94px
   width 578px
-  lg-block(@block{
+  to(1160px, @block{
     position static
     right auto
     top auto
@@ -242,8 +242,13 @@
   &--header
     margin-left auto
     opacity 0
+    visibility hidden
     &.stick
       opacity 1
+      visibility visible
+      to(767px,@block{
+        margin-right 100px
+      })
 .page-content--blog
   .promo__content
     padding-top 0
