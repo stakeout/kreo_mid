@@ -36,9 +36,12 @@ export const activePageLink = () => {
   }
 
   if (body.classList.contains('page--contacts')) {
-    navItems[3].classList.add('navigation__item--active');
+    navItems[4].classList.add('navigation__item--active');
   }
   if (body.classList.contains('page--blog')) {
+    navItems[3].classList.add('navigation__item--active');
+  }
+  if (body.classList.contains('page--pricing')) {
     navItems[2].classList.add('navigation__item--active');
   }
 }
