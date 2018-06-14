@@ -23,6 +23,10 @@
   &__list
     row-flex()
     justify-content space-between
+    flex-wrap wrap
+    from-to(480px, 935px, @block{
+      justify-content center
+    })
   &__item
     col()
     size(4)
@@ -40,6 +44,13 @@
     lg-block(@block{
       padding 40px
     })
+    from-to(480px, 935px, @block{
+      flex-basis 43%
+    })
+    &:last-child
+      from-to(480px, 935px, @block{
+        margin-top 30px
+      })
     xs-block(@block{
       margin-bottom 20px
       padding 40px 20px 20px
