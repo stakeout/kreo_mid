@@ -1,0 +1,87 @@
+.quote-form
+  margin-top -350px
+  margin-bottom 60px
+  padding 0 75px
+  md-block(@block{
+    padding 0 30px
+  })
+  to(660px, @block{
+    padding-left 0
+    padding-right 0
+  })
+  &__wrapper
+    position relative
+    width: 100%
+    max-width: 700px
+    border-radius: 5px;
+    padding: 6.818% 9.090%
+    text-align: center
+    margin: 0 auto
+    background: linear-gradient(0,#1d2029 0%,#24293b 100%)
+    z-index 2
+  &__inner
+    position relative
+    max-width 1600px
+    width 100%
+    margin 0 auto
+    &::before
+      position absolute
+      content ''
+      top 0
+      bottom 0
+      left 0
+      max-width 500px
+      width 100%
+      background-image url('https://www.kreo.net/hubfs/kreo_new/static/img/content/dashboard-and-scenarios-half-left.png')
+      background-repeat no-repeat
+      background-position center
+      z-index 1
+    &::after
+      position absolute
+      content ''
+      top 0
+      bottom 0
+      right 0
+      max-width 500px
+      width 100%
+      background-image url('https://www.kreo.net/hubfs/kreo_new/static/img/content/4d-visualisation-and-validation-half-right.png')
+      background-repeat no-repeat
+      background-position center
+      z-index 1
+  &__header
+    h2
+      margin-bottom 40px
+      color #fff
+      font-size 36px
+      line-height 1
+      font-weight 400
+    p
+      margin-bottom 30px
+      font-size 18px
+      font-weight 300
+      color #fff
+      line-height 1.5
+  .hs-form input[type="text"], .hs-form input[type="email"], .hs-form input[type="tel"], select[name="type_of_business"]
+    width 100%
+    margin-bottom 30px
+    padding 20px 30px
+    background transparent
+    border none
+    border-bottom: 2px solid #ccd2dd
+
+  select[name="type_of_business"]
+    color #fff
+    option
+      color #787878
+      background-color #1d2029
+      padding 10px
+  .hs-form .actions
+    width 100%
+  .hs-form .hs-submit input[type="submit"]
+    display block
+    margin 0 auto
+    width 57.446%
+    xs-block(@block{
+      width 90%
+    })
+

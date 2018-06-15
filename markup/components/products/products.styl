@@ -24,8 +24,9 @@
     row-flex()
     justify-content space-between
     flex-wrap wrap
-    from-to(480px, 935px, @block{
+    from-to(481px, 935px, @block{
       justify-content center
+      display block
     })
   &__item
     col()
@@ -44,23 +45,29 @@
     lg-block(@block{
       padding 40px
     })
-    from-to(480px, 935px, @block{
-      flex-basis 43%
+    from-to(481px, 935px, @block{
+      width 80%
+      margin-left 0
+      margin 0 auto
     })
-    &:last-child
-      from-to(480px, 935px, @block{
-        margin-top 30px
+    &:not(:last-child)
+      from-to(481px, 935px, @block{
+        margin-bottom 30px
+
       })
     xs-block(@block{
       margin-bottom 20px
       padding 40px 20px 20px
     })
-    &:hover
+    &:hover,
+    &:focus
       transform: translateY(-10px) ;
       box-shadow: 0 10px 30px 0 rgba(0,0,0,0.16)
-    xs-block(@block{
-      pointer-events none
-    })
+      xs-block(@block{
+        transform none
+        box-shadow none
+      })
+
     p
       margin-bottom 25px
       font-size 14px

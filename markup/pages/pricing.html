@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  {{> head/head head.defaults}}
+</head>
+
+<body class="page page--pricing">
+  %=symbols=%
+
+  <div class="page__inner">
+    {{> header/header}}
+    <main class="page-content">
+      {{> promo-quote/promo-quote}}
+      {{> quote-form/quote-form}}
+    </main>
+    {{> footer/footer}}
+  </div>
+
+
+  <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+
+  <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+  <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>
