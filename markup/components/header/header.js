@@ -17,7 +17,7 @@ export const stickyNav = () => {
         }
     });
     if($body.hasClass('page--plan')) {
-      $signUp.text('Sign Up Beta');
+      $signUp.text('Get Free Trial');
       $signUp.attr('href','#signUpBeta');
       $signUp.attr('data-lity', 'data-lity');
     }
