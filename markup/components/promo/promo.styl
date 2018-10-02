@@ -88,11 +88,30 @@
         xs-block(@block{
           margin-bottom 20px
         })
+    ul
+      li
+        position relative
+        margin-bottom 5px
+        padding-left 16px
+        &::before
+          position absolute
+          content ''
+          left: 0
+          top: 7px
+          width: 6px
+          height: 6px
+          background-color: #f58240
+          border-radius: 50%
 .video-box
   position absolute
   right 15px
   top 94px
   width 578px
+  &--design
+    a
+      &::before,
+      &::after
+        display none
   to(1160px, @block{
     position static
     right auto
